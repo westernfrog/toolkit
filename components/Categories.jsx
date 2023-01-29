@@ -10,56 +10,47 @@ export default function Categories(params) {
           <Link href={"/kwk"} className="text-decoration-none text-dark">
             <div className="row g-0">
               <div className="col-3 bg-success d-flex align-items-center justify-content-between mx-auto rounded">
-                <i className="fa-solid fa-font fa-2xl mx-auto text-light"></i>
+                <i className="fa-solid fa-font fa-xl mx-auto text-light"></i>
               </div>
-              <Tools
-                title="Case converter"
-                desc="Convert your text or string to uppercase or lowercase."
-              />
+              <Tools title="Text tools" desc="Generate and edit text" />
             </div>
           </Link>
         </div>
         <div className="col-md-6 my-3 tool-link">
           <div className="row g-0">
             <div className="col-3 bg-success d-flex align-items-center justify-content-between mx-auto rounded">
-              <i className="fa-solid fa-font fa-2xl mx-auto text-light"></i>
+              <i class="fa-regular fa-image fa-xl mx-auto text-light"></i>
+            </div>
+            <Tools title="Image tools" desc="Generate and edit images" />
+          </div>
+        </div>
+        <div className="col-md-6 my-3 tool-link">
+          <div className="row g-0">
+            <div className="col-3 bg-success d-flex align-items-center justify-content-between mx-auto rounded">
+              <i class="fa-regular fa-file-pdf fa-xl mx-auto text-light"></i>
             </div>
             <Tools
-              title="Case convertors"
-              desc="Convert your text or string to uppercase or lowercase."
+              title="File tools"
+              desc="Convert files according to your wish"
             />
           </div>
         </div>
         <div className="col-md-6 my-3 tool-link">
           <div className="row g-0">
             <div className="col-3 bg-success d-flex align-items-center justify-content-between mx-auto rounded">
-              <i className="fa-solid fa-font fa-2xl mx-auto text-light"></i>
+              <i class="fa-solid fa-code fa-xl mx-auto text-light"></i>
             </div>
-            <Tools
-              title="Case convertors"
-              desc="Convert your text or string to uppercase or lowercase."
-            />
+            <Tools title="JSON formatter" desc="Prettify json code" />
           </div>
         </div>
         <div className="col-md-6 my-3 tool-link">
           <div className="row g-0">
             <div className="col-3 bg-success d-flex align-items-center justify-content-between mx-auto rounded">
-              <i className="fa-solid fa-font fa-2xl mx-auto text-light"></i>
+              <i class="fa-solid fa-paragraph fa-xl mx-auto text-light"></i>
             </div>
             <Tools
-              title="Case convertors"
-              desc="Convert your text or string to uppercase or lowercase."
-            />
-          </div>
-        </div>
-        <div className="col-md-6 my-3 tool-link">
-          <div className="row g-0">
-            <div className="col-3 bg-success d-flex align-items-center justify-content-between mx-auto rounded">
-              <i className="fa-solid fa-font fa-2xl mx-auto text-light"></i>
-            </div>
-            <Tools
-              title="Case convertors"
-              desc="Convert your text or string to uppercase or lowercase."
+              title="Lorem ipsum generator"
+              desc="Generate and edit lorem text"
             />
           </div>
         </div>

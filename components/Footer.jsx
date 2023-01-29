@@ -13,10 +13,7 @@ export default function Footer() {
       <div className="border-top">
         <footer className="container py-3 mx-auto">
           <div className="text-center">
-            <span
-              className="text-rubik text-muted"
-              style={{ fontSize: "15px" }}
-            >
+            <span className="text-dm" style={{ fontSize: "15px" }}>
               &copy; {newYear} • The ToolKit, Inc
             </span>
           </div>
