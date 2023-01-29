@@ -5,7 +5,7 @@ export default function Overview() {
   return (
     <>
       <div className="text-lg-center mx-3">
-        <div className="col-md-5 mx-auto my-5">
+        <div className="col-md-6 mx-auto my-5">
           <h1 className="display-5 text-rubik fw-bold">
             Welcome to The ToolKit.
           </h1>
