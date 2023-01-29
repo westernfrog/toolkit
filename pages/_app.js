@@ -6,12 +6,15 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Aman Singh</title>
-        <meta name="description" content="Portfolio of Aman Singh" />
+        <title>The ToolKit</title>
+        <meta
+          name="description"
+          content="The ToolKit is an online tool factory where you can get all tools you needed in one place. Every tool is designed to solve a problem with minimum number of steps to save time of the users and decrease the complexity of the operation."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
-          href="https://cdn-icons-png.flaticon.com/512/2926/2926754.png"
+          href="https://cdn-icons-png.flaticon.com/512/3271/3271758.png"
         />
       </Head>
       <Script
