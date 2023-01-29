@@ -19,7 +19,7 @@ export default function Categories(params) {
         <div className="col-md-6 my-3 tool-link">
           <div className="row g-0">
             <div className="col-3 bg-success d-flex align-items-center justify-content-between mx-auto rounded">
-              <i class="fa-regular fa-image fa-xl mx-auto text-light"></i>
+              <i className="fa-regular fa-image fa-xl mx-auto text-light"></i>
             </div>
             <Tools title="Image tools" desc="Generate and edit images" />
           </div>
@@ -27,7 +27,7 @@ export default function Categories(params) {
         <div className="col-md-6 my-3 tool-link">
           <div className="row g-0">
             <div className="col-3 bg-success d-flex align-items-center justify-content-between mx-auto rounded">
-              <i class="fa-regular fa-file-pdf fa-xl mx-auto text-light"></i>
+              <i className="fa-regular fa-file-pdf fa-xl mx-auto text-light"></i>
             </div>
             <Tools
               title="File tools"
@@ -38,7 +38,7 @@ export default function Categories(params) {
         <div className="col-md-6 my-3 tool-link">
           <div className="row g-0">
             <div className="col-3 bg-success d-flex align-items-center justify-content-between mx-auto rounded">
-              <i class="fa-solid fa-code fa-xl mx-auto text-light"></i>
+              <i className="fa-solid fa-code fa-xl mx-auto text-light"></i>
             </div>
             <Tools title="JSON formatter" desc="Prettify json code" />
           </div>
@@ -46,7 +46,7 @@ export default function Categories(params) {
         <div className="col-md-6 my-3 tool-link">
           <div className="row g-0">
             <div className="col-3 bg-success d-flex align-items-center justify-content-between mx-auto rounded">
-              <i class="fa-solid fa-paragraph fa-xl mx-auto text-light"></i>
+              <i className="fa-solid fa-paragraph fa-xl mx-auto text-light"></i>
             </div>
             <Tools
               title="Lorem ipsum generator"
