@@ -2,10 +2,7 @@ export default function Card(props) {
   return (
     <>
       <div className="col-md-4">
-        <div
-          className="card border shadow-sm mb-3 py-3 text-dm"
-          style={{ maxWidth: "18rem" }}
-        >
+        <div className="card border shadow-sm mb-3 py-3 text-dm">
           <div className="card-header bg-transparent border-0 mb-3 text-success">
             {props.icon}
           </div>
