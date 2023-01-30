@@ -29,7 +29,7 @@ body {
   transition: transform 100ms ease-in-out;
 }
 .toolsCat:hover {
-  opacity: 80%;
+  background-color: #c9ccd5;
 }
 .sidebar {
   position: fixed;

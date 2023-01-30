@@ -4,7 +4,7 @@ import Tools from "./Tools";
 export default function Categories() {
   return (
     <>
-      <h1 className="fs-3 text-rubik fw-bold mt-5">Tools Categories</h1>
+      <h1 className="fs-3 text-rubik fw-bold">Tools Categories</h1>
       <div className="row my-4 g-4 text-start">
         <Tools
           icon={<i className="fa-solid fa-font fa-xl mx-auto text-light"></i>}

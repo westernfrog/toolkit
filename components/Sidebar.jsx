@@ -35,7 +35,7 @@ export default function Sidebar() {
             <ToolsCat
               icon={<i class="fa-solid fa-laptop-code fa-lg me-2"></i>}
               title="Prettify json"
-              url="/tools/text"
+              url="/tools/json"
             />
           </ul>
           <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-dm fw-bold">
@@ -48,12 +48,12 @@ export default function Sidebar() {
               url="/tools/text"
             />
             <ToolsCat
-              icon={<i class="fa-regular fa-file-image fa-lg me-2"></i>}
+              icon={<i class="fa-solid fa-photo-film fa-lg me-2"></i>}
               title="Image to Base64 converter"
               url="/tools/text"
             />
             <ToolsCat
-              icon={<i class="fa-solid fa-paperclip fa-lg me-2"></i>}
+              icon={<i class="fa-solid fa-hashtag fa-lg me-2"></i>}
               title="Base64 to Image converter"
               url="/tools/text"
             />
