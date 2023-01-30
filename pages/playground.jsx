@@ -1,5 +1,5 @@
-import Categories from "@/components/Categories";
 import Header from "@/components/Header";
+import Name from "@/components/Name";
 import Sidebar from "@/components/Sidebar";
 
 export default function Playground() {
@@ -11,7 +11,13 @@ export default function Playground() {
           <Sidebar />
           <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 my-5">
             <div className="col-lg-8">
-              <Categories />
+              <Name name="Text tools" />
+            </div>
+            <div className="col-lg-8">
+              <Name name="Image tools" />
+            </div>
+            <div className="col-lg-8">
+              <Name name="File tools" />
             </div>
           </main>
         </div>

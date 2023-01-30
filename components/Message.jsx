@@ -27,7 +27,7 @@ export default function Message() {
     <>
       <div
         className="offcanvas offcanvas-end text-dm mx-lg-5 my-lg-5 rounded-3 border-0 shadow-sm "
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
       >
