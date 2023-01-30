@@ -80,7 +80,7 @@ export default function Message() {
               onChange={(e) => handleChange(e)}
             ></textarea>
             <button
-              className="btn btn-light btn-sm my-3 rounded-pill px-3 text-rubik border btn-Reload btnclose"
+              className="btn btn-outline-success btn-sm my-3 rounded-pill px-3 text-rubik btn-Reload btnclose"
               role="button"
               onClick={handleSubmit}
               autoCorrect="false"

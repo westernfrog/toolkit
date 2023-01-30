@@ -142,7 +142,7 @@ export default function Header() {
                     data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight"
                   >
-                    <i class="fa-solid fa-comment me-2"></i>
+                    <i class="fa-regular fa-comment me-2"></i>
                     Send a message
                   </button>
                 </div>

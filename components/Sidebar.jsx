@@ -11,7 +11,7 @@ export default function Sidebar() {
         <div class="position-sticky my-5">
           <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-dm fw-bold">
             <Link href={"/text"} className="text-decoration-none text-dark">
-              • &nbsp;Text tools
+              # &nbsp;Text tools
             </Link>
           </h4>
           <ul class="nav flex-column">
@@ -43,7 +43,7 @@ export default function Sidebar() {
           </ul>
           <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-dm fw-bold">
             <Link href={"/image"} className="text-decoration-none text-dark">
-              • &nbsp;Image tools
+              # &nbsp;Image tools
             </Link>
           </h4>
           <ul class="nav flex-column">
@@ -65,7 +65,7 @@ export default function Sidebar() {
           </ul>
           <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-dm fw-bold">
             <Link href={"/file"} className="text-decoration-none text-dark">
-              • &nbsp;File tools
+              # &nbsp;File tools
             </Link>
           </h4>
           <ul class="nav flex-column">

@@ -6,10 +6,7 @@ export default function Card(props) {
           class="card border shadow-sm mb-3 py-3 text-dm"
           style={{ maxWidth: "18rem" }}
         >
-          <div
-            class="card-header bg-transparent border-0 mb-3"
-            style={props.color}
-          >
+          <div class="card-header bg-transparent border-0 mb-3 text-success">
             {props.icon}
           </div>
           <div class="card-body">
