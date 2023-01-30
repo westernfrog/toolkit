@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import $ from "jquery";
 
 export default function Message() {
   const [formData, setformData] = useState({
-    text: "",
+    user: "",
   });
 
   const handleChange = async (e) => {
@@ -14,7 +15,7 @@ export default function Message() {
   };
 
   const handleSubmit = async () => {
-    const res = await fetch("/api/posted", {
+    const res = await fetch("/api/response", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -22,11 +23,19 @@ export default function Message() {
       body: JSON.stringify(formData),
     });
     const data = await res.json();
+    console.log(data);
   };
+
+  useEffect(() => {
+    $(".btn-Reload").on("click", function () {
+      location.reload();
+    });
+  }, []);
+
   return (
     <>
       <div
-        className="offcanvas offcanvas-end text-dm mx-lg-5 my-lg-5 rounded-3 border-0 shadow-sm "
+        className="offcanvas offcanvas-end text-dm mx-lg-5 my-lg-5 rounded-3 border-0 shadow-sm"
         tabIndex="-1"
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
@@ -63,23 +72,20 @@ export default function Message() {
           <div>
             <textarea
               className="form-control border bg-light mt-2"
-              id="text"
+              id="user"
               rows="4"
-              value={formData.text}
+              value={formData.user}
               placeholder="what's on your mind?..."
               style={{ resize: "none" }}
               onChange={(e) => handleChange(e)}
             ></textarea>
             <button
-              className="btn btn-light btn-sm my-3 rounded-pill px-3 text-rubik border"
+              className="btn btn-light btn-sm my-3 rounded-pill px-3 text-rubik border btn-Reload btnclose"
               role="button"
               onClick={handleSubmit}
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
               autoCorrect="false"
             >
-              send <i className="fa-regular fa-paper-plane ms-2"></i>
+              send <i className="fa-regular fa-paper-plane fa-sm ms-2"></i>
             </button>
           </div>
           <p className="my-3 text-center" style={{ fontSize: "14px" }}>

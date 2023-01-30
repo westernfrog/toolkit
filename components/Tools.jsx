@@ -4,7 +4,7 @@ export default function Tools(props) {
   return (
     <>
       <div className="col-md-6 my-3 tool-link">
-        <Link href={"/" + props.url} className="text-decoration-none text-dark">
+        <Link href={props.url} className="text-decoration-none text-dark">
           <div className="row g-0">
             <div
               className="col-3 d-flex align-items-center justify-content-between mx-auto rounded"
