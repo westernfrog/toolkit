@@ -1,63 +1,41 @@
 import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
 
 export default function File(params) {
   return (
     <>
       <Header />
-      <button
-        class="btn btn-primary btn-sm m-0 text-dm"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasWithBothOptions"
-        aria-controls="offcanvasWithBothOptions"
-      >
-        <i class="fa-solid fa-comment me-2"></i>
-        Send me message
-      </button>
-
-      <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="offcanvasWithBackdrop"
-        aria-labelledby="offcanvasWithBackdropLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
-            Offcanvas with backdrop
-          </h5>
-          <button
-            type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <p>.....</p>
-        </div>
-      </div>
-      <div
-        class="offcanvas offcanvas-start"
-        data-bs-scroll="true"
-        tabindex="-1"
-        id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-            Backdrop with scrolling
-          </h5>
-          <button
-            type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <p>
-            Try scrolling the rest of the page to see this option in action.
-          </p>
+      <div class="container-fluid">
+        <div class="row">
+          <Sidebar />
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 my-2">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1 class="h2">Tools Categories</h1>
+              <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group me-2">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Share
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    Export
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                >
+                  <span data-feather="calendar"></span>
+                  This week
+                </button>
+              </div>
+            </div>
+          </main>
         </div>
       </div>
     </>

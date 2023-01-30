@@ -2,6 +2,7 @@ import Link from "next/link";
 import $ from "jquery";
 import { useEffect } from "react";
 import Dropdown from "./Dropdown";
+import Message from "./Message";
 
 export default function Header() {
   useEffect(() => {
@@ -150,6 +151,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      <Message />
     </>
   );
 }
