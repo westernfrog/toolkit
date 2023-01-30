@@ -48,17 +48,17 @@ export default function Sidebar() {
           </h4>
           <ul className="nav flex-column">
             <ToolsCat
-              icon={<i className="fa-regular fa-image fa-lg me-2"></i>}
+              icon={<i className="fa-solid fa-photo-film fa-lg me-2"></i>}
               title="Image filters"
               url="/tools/text"
             />
             <ToolsCat
-              icon={<i className="fa-solid fa-photo-film fa-lg me-2"></i>}
+              icon={<i className="fa-solid fa-image fa-lg me-2"></i>}
               title="Image to Base64 converter"
               url="/tools/text"
             />
             <ToolsCat
-              icon={<i className="fa-solid fa-terminal fa-lg me-2"></i>}
+              icon={<i className="fa-solid fa-code fa-lg me-2"></i>}
               title="Base64 to Image converter"
               url="/tools/text"
             />
