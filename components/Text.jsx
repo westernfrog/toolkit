@@ -25,8 +25,8 @@ export default function Text0() {
       />
       <Card
         icon={<i className="fa-solid fa-laptop-code fa-2xl"></i>}
-        title="Prettify json code"
-        desc="Format/beautify your JSON code and copy the formatted code to your clipboard."
+        title="Prettify JavaScript"
+        desc="Format/beautify your JavaScript code and copy the formatted code to your clipboard."
       />
     </>
   );
