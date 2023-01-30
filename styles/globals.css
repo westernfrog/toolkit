@@ -31,6 +31,14 @@ body {
 .toolsCat:hover {
   background-color: #c9ccd5;
 }
+.card:hover {
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transform: scale(1.02);
+  transition: box-shadow, transform 200ms ease-in-out;
+}
+.card {
+  transition: box-shadow, transform 200ms ease-in-out;
+}
 .sidebar {
   position: fixed;
   top: 0;
