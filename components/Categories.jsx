@@ -33,7 +33,7 @@ export default function Categories() {
         />
         <Tools
           icon={
-            <i class="fa-solid fa-laptop-code fa-xl mx-auto text-light"></i>
+            <i className="fa-solid fa-laptop-code fa-xl mx-auto text-light"></i>
           }
           title="JSON formatter"
           desc="Prettify json code"
@@ -42,7 +42,7 @@ export default function Categories() {
         />
         <Tools
           icon={
-            <i class="fa-solid fa-hands-asl-interpreting fa-xl mx-auto text-light"></i>
+            <i className="fa-solid fa-hands-asl-interpreting fa-xl mx-auto text-light"></i>
           }
           title="Miscellaneous tools"
           desc="Other tools"

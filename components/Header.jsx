@@ -16,7 +16,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-light border-bottom text-dm bg-light sticky-top">
         <div className="container-fluid mx-3">
           <Link className="navbar-brand text-rubik" href="/">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <i className="fa-solid fa-screwdriver-wrench"></i>
           </Link>
           <button
             className="navbar-toggler"
@@ -142,7 +142,7 @@ export default function Header() {
                     data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight"
                   >
-                    <i class="fa-regular fa-comment me-2"></i>
+                    <i className="fa-regular fa-comment me-2"></i>
                     Send a message
                   </button>
                 </div>
