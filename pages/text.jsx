@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Name from "@/components/Name";
 import Sidebar from "@/components/Sidebar";
 
-export default function Playground() {
+export default function Text() {
   return (
     <>
       <Header />
@@ -13,26 +13,11 @@ export default function Playground() {
           <Sidebar />
           <main class="col-md-9 ms-sm-auto col-lg-10 px-md-5 my-5">
             <div className="col-lg-10">
-              <Name name="Text tools" />
+              <Name id="text" name="Text tools" />
               <div className="row my-4">
                 <Card />
                 <Card />
                 <Card />
-                <Card />
-                <Card />
-              </div>
-            </div>
-            <div className="col-lg-10">
-              <Name name="Image tools" />
-              <div className="row my-4">
-                <Card />
-                <Card />
-                <Card />
-              </div>
-            </div>
-            <div className="col-lg-10">
-              <Name name="File tools" />
-              <div className="row my-4">
                 <Card />
                 <Card />
               </div>

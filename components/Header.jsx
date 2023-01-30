@@ -55,22 +55,22 @@ export default function Header() {
                   <Dropdown
                     icon={<i className="fa-solid fa-font me-2"></i>}
                     title="Text tools"
-                    url="/tools/text"
+                    url="/text"
                   />
                   <Dropdown
                     icon={<i className="fa-regular fa-image me-2"></i>}
                     title="Image tools"
-                    url="/tools/image"
+                    url="/image"
                   />
                   <Dropdown
                     icon={<i className="fa-regular fa-file-pdf me-2"></i>}
                     title="File tools"
-                    url="/tools/file"
+                    url="/file"
                   />
                   <Dropdown
                     icon={<i className="fa-regular fa-file-code me-2"></i>}
                     title="JSON formatter"
-                    url="/tools/json"
+                    url="/json"
                   />
                 </ul>
               </li>

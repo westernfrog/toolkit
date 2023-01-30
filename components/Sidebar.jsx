@@ -6,12 +6,12 @@ export default function Sidebar() {
     <>
       <nav
         id="sidebarMenu"
-        class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse my-4"
+        class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse mt-4"
       >
         <div class="position-sticky my-5">
           <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-dm fw-bold">
-            <Link href={"#text"} className="text-decoration-none text-dark">
-              # Text tools
+            <Link href={"/text"} className="text-decoration-none text-dark">
+              # &nbsp;Text tools
             </Link>
           </h4>
           <ul class="nav flex-column">
@@ -38,12 +38,12 @@ export default function Sidebar() {
             <ToolsCat
               icon={<i class="fa-solid fa-laptop-code fa-lg me-2"></i>}
               title="Prettify json"
-              url="/tools/json"
+              url="/json"
             />
           </ul>
           <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-dm fw-bold">
-            <Link href={"#image"} className="text-decoration-none text-dark">
-              # Image tools
+            <Link href={"/image"} className="text-decoration-none text-dark">
+              # &nbsp;Image tools
             </Link>
           </h4>
           <ul class="nav flex-column">
@@ -64,8 +64,8 @@ export default function Sidebar() {
             />
           </ul>
           <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-dm fw-bold">
-            <Link href={"#file"} className="text-decoration-none text-dark">
-              # File tools
+            <Link href={"/file"} className="text-decoration-none text-dark">
+              # &nbsp;File tools
             </Link>
           </h4>
           <ul class="nav flex-column">

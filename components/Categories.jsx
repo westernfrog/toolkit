@@ -10,7 +10,7 @@ export default function Categories() {
           icon={<i className="fa-solid fa-font fa-xl mx-auto text-light"></i>}
           title="Text tools"
           desc="Generate and edit text"
-          url="tools/text"
+          url="/text"
           color={{ backgroundColor: "#19c37d" }}
         />
         <Tools
@@ -19,7 +19,7 @@ export default function Categories() {
           }
           title="Image tools"
           desc="Generate and edit images"
-          url="tools/image"
+          url="/image"
           color={{ backgroundColor: "#dd5ce5" }}
         />
         <Tools
@@ -28,7 +28,7 @@ export default function Categories() {
           }
           title="File tools"
           desc="Convert files as your wish"
-          url="tools/file"
+          url="/file"
           color={{ backgroundColor: "#5436da" }}
         />
         <Tools
@@ -37,7 +37,7 @@ export default function Categories() {
           }
           title="JSON formatter"
           desc="Prettify json code"
-          url="tools/json"
+          url="/json"
           color={{ backgroundColor: "#ef4146" }}
         />
         <Tools
@@ -46,7 +46,7 @@ export default function Categories() {
           }
           title="Lorem ipsum generator"
           desc="Generate and edit lorem text"
-          url="tools/lorem"
+          url="/text"
           color={{ backgroundColor: "#f4ac36" }}
         />
       </div>
