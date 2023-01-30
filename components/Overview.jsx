@@ -17,12 +17,13 @@ export default function Overview() {
           </p>
           <div className="row my-5 pb-5 border-bottom">
             <PopCard
-              url="tools/text"
+              url="/text"
               title="Text formatters"
               desc="Case converters, Lorem ipsum generator and many more.."
               style="linear-gradient(300deg, #EBC7E6 0%, #645CBB 70%)"
             />
             <PopCard
+              url="/image"
               title="Image tools"
               desc="Image filters, Image to Base64 convertor and more.."
               style="linear-gradient(0deg, #FD8A8A 0%, #FF74B1 90%)"
