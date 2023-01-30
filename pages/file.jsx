@@ -1,4 +1,4 @@
-import Card from "@/components/Card";
+import File0 from "@/components/File";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Name from "@/components/Name";
@@ -15,16 +15,7 @@ export default function File() {
             <div className="col-lg-10">
               <Name id="file" name="File tools" />
               <div className="row my-4">
-                <Card
-                  icon={<i class="fa-regular fa-file-pdf fa-2xl"></i>}
-                  title="PDF to Word converter"
-                  desc="Convert PDF file to a Word file."
-                />
-                <Card
-                  icon={<i class="fa-regular fa-file-word fa-2xl"></i>}
-                  title="Word to PDF converter"
-                  desc="Convert Word file to a PDF file."
-                />
+                <File0 />
               </div>
             </div>
           </main>
