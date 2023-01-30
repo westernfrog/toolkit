@@ -4,10 +4,7 @@ export default function PopCard(props) {
   return (
     <>
       <div className="col-md-6 border-0 alink">
-        <Link
-          href={"/" + props.url}
-          className="text-decoration-none text-light"
-        >
+        <Link href={props.url} className="text-decoration-none text-light">
           <div
             className="card border-0 mb-3 text-start px-2 shadow"
             style={{
