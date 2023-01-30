@@ -1,6 +1,7 @@
 import Link from "next/link";
 import $ from "jquery";
 import { useEffect } from "react";
+import Dropdown from "./Dropdown";
 
 export default function Header() {
   useEffect(() => {
@@ -14,9 +15,8 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-light border-bottom text-dm bg-light sticky-top">
         <div className="container-fluid mx-3">
           <Link className="navbar-brand text-rubik" href="/">
-            <i className="fa-solid fa-dharmachakra me-2"></i>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
           </Link>
-
           <button
             className="navbar-toggler"
             type="button"
@@ -51,30 +51,26 @@ export default function Header() {
                   className="dropdown-menu text-dm border-0 shadow-sm opacity-75"
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
-                  <li>
-                    <Link className="dropdown-item" href="/tools/text">
-                      <i className="fa-solid fa-font me-2"></i>
-                      Text tools
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" href="/tools/file">
-                      <i className="fa-regular fa-file-pdf me-2"></i>
-                      File tools
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" href="tools/image">
-                      <i className="fa-regular fa-image me-2"></i>
-                      Image tools
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" href="/tools/json">
-                      <i className="fa-regular fa-file-code me-2"></i>
-                      JSON formatter
-                    </Link>
-                  </li>
+                  <Dropdown
+                    icon={<i className="fa-solid fa-font me-2"></i>}
+                    title="Text tools"
+                    url="/tools/text"
+                  />
+                  <Dropdown
+                    icon={<i className="fa-regular fa-image me-2"></i>}
+                    title="Image tools"
+                    url="/tools/image"
+                  />
+                  <Dropdown
+                    icon={<i className="fa-regular fa-file-pdf me-2"></i>}
+                    title="File tools"
+                    url="/tools/file"
+                  />
+                  <Dropdown
+                    icon={<i className="fa-regular fa-file-code me-2"></i>}
+                    title="JSON formatter"
+                    url="/tools/json"
+                  />
                 </ul>
               </li>
               <li className="nav-item">
@@ -100,33 +96,21 @@ export default function Header() {
                   className="dropdown-menu text-dm border-0 shadow-sm opacity-75"
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      href="mailto:haaamansingh007@gmail.com"
-                    >
-                      <i className="fa-regular fa-envelope me-2"></i>
-                      E-mail
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      href="https://linkedin.com/in/Linkman-singh123/"
-                    >
-                      <i className="fa-brands fa-linkedin-in me-2"></i>
-                      Linkedin
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      href="https://instagram.com/iam__amansingh/"
-                    >
-                      <i className="fa-brands fa-instagram me-2"></i>
-                      Instagram
-                    </Link>
-                  </li>
+                  <Dropdown
+                    icon={<i className="fa-regular fa-envelope me-2"></i>}
+                    title="E-mail"
+                    url="mailto:haaamansingh007@gmail.com"
+                  />
+                  <Dropdown
+                    icon={<i className="fa-brands fa-linkedin-in me-2"></i>}
+                    title="Linkedin"
+                    url="https://linkedin.com/in/Linkman-singh123/"
+                  />
+                  <Dropdown
+                    icon={<i className="fa-brands fa-instagram me-2"></i>}
+                    title="Instagram"
+                    url="https://instagram.com/iam__amansingh/"
+                  />
                 </ul>
               </li>
               <li className="nav-item">
@@ -149,11 +133,18 @@ export default function Header() {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" href="/">
-                  <button type="button" className="btn btn-primary btn-sm m-0">
-                    Sign up
+                <div className="nav-link">
+                  <button
+                    type="button"
+                    className="btn btn-primary btn-sm m-0"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
+                    <i class="fa-solid fa-comment me-2"></i>
+                    Send a message
                   </button>
-                </Link>
+                </div>
               </li>
             </ul>
           </div>

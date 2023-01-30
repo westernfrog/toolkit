@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 
-export default function Text(params) {
+export default function Json(params) {
   return (
     <>
       <Header />

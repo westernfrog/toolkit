@@ -22,3 +22,10 @@ body {
 .tool-link :hover {
   opacity: 80%;
 }
+.btnclose:hover {
+  transform: scale(1.1);
+  transition: transform 100ms ease-in-out;
+}
+.btnclose {
+  transition: transform 100ms ease-in-out;
+}
