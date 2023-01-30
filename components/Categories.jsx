@@ -42,10 +42,10 @@ export default function Categories() {
         />
         <Tools
           icon={
-            <i className="fa-solid fa-paragraph fa-xl mx-auto text-light"></i>
+            <i class="fa-solid fa-hands-asl-interpreting fa-xl mx-auto text-light"></i>
           }
-          title="Lorem ipsum generator"
-          desc="Generate and edit lorem text"
+          title="Miscellaneous tools"
+          desc="Other tools"
           url="/text"
           color={{ backgroundColor: "#f4ac36" }}
         />

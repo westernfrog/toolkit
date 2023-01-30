@@ -49,7 +49,7 @@ export default function Sidebar() {
           <ul class="nav flex-column">
             <ToolsCat
               icon={<i class="fa-regular fa-image fa-lg me-2"></i>}
-              title="Image filter"
+              title="Image filters"
               url="/tools/text"
             />
             <ToolsCat
