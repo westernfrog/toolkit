@@ -42,7 +42,7 @@ export default function Message() {
       >
         <div className="offcanvas-header border-bottom shadow-sm px-4">
           <h6 id="offcanvasRightLabel" className="mb-0 fw-bold">
-            <i class="fa-regular fa-comment fa-xl me-2"></i>
+            <i className="fa-regular fa-comment fa-xl me-2"></i>
             Send a message!
           </h6>
           <button
