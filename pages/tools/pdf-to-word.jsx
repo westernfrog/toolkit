@@ -5,7 +5,7 @@ export default function PDFToWord(params) {
   return (
     <>
       <Header />
-      <Sidebar />
+      <Sidebar pdftoword="active-category" />
     </>
   );
 }

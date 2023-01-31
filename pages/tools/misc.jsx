@@ -10,7 +10,7 @@ export default function Json() {
       <Header />
       <div className="container-fluid">
         <div className="row mx-0 px-md-5">
-          <Sidebar />
+          <Sidebar basetoimage="active-category" />
           <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-5">
             <div className="col-lg-11">
               <Name id="text" name="Miscellaneous tools" />

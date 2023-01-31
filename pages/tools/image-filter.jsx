@@ -5,7 +5,7 @@ export default function ImageFilters(params) {
   return (
     <>
       <Header />
-      <Sidebar />
+      <Sidebar imagefilter="active-category" />
     </>
   );
 }

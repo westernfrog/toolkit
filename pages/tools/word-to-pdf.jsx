@@ -5,7 +5,7 @@ export default function WordToPDF(params) {
   return (
     <>
       <Header />
-      <Sidebar />
+      <Sidebar wordtopdf="active-category" />
     </>
   );
 }

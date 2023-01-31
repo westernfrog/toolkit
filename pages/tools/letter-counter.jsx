@@ -5,7 +5,7 @@ export default function LetterCounter(params) {
   return (
     <>
       <Header />
-      <Sidebar />
+      <Sidebar lettercounter="active-category" />
     </>
   );
 }

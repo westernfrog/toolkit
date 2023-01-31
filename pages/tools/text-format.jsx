@@ -5,7 +5,7 @@ export default function TextFormat(params) {
   return (
     <>
       <Header />
-      <Sidebar />
+      <Sidebar textformat="active-category" />
     </>
   );
 }

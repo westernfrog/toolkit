@@ -5,7 +5,7 @@ export default function BaseToImage(params) {
   return (
     <>
       <Header />
-      <Sidebar />
+      <Sidebar basetoimage="active-category" />
     </>
   );
 }

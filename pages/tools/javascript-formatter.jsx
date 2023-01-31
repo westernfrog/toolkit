@@ -5,7 +5,7 @@ export default function JSFormat(params) {
   return (
     <>
       <Header />
-      <Sidebar />
+      <Sidebar javascriptformatter="active-category" />
     </>
   );
 }

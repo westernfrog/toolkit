@@ -5,7 +5,7 @@ export default function CaseConverter(params) {
   return (
     <>
       <Header />
-      <Sidebar />
+      <Sidebar caseconverter="active-category" />
     </>
   );
 }

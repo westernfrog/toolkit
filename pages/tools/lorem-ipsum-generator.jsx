@@ -5,7 +5,7 @@ export default function LoremIpsum(params) {
   return (
     <>
       <Header />
-      <Sidebar />
+      <Sidebar loremipsum="active-category" />
     </>
   );
 }
