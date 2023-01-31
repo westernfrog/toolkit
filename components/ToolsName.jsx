@@ -1,4 +1,11 @@
 export default function ToolsName(props) {
+  function clipboard() {
+    let text = document.getElementById("clipboard");
+    text.select();
+    text.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(text.value);
+  }
+
   return (
     <>
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 border-bottom">
@@ -8,22 +15,22 @@ export default function ToolsName(props) {
             type="button"
             class="btn btn-sm btn-share text-dm p-2"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-target="#Modal"
           >
             <i class="fa-solid fa-share-nodes me-2 fa-lg"></i>
             Share tools
           </button>
           <div
             class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
+            id="Modal"
+            tabIndex="-1"
+            aria-labelledby="ModalLabel"
             aria-hidden="true"
           >
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content text-rubik bg-light border-0">
                 <div class="modal-header border-0">
-                  <h5 class="modal-title" id="exampleModalLabel">
+                  <h5 class="modal-title" id="ModalLabel">
                     Share tools
                   </h5>
                 </div>
@@ -36,9 +43,10 @@ export default function ToolsName(props) {
                     <div className="col-10 col-lg-11">
                       <div class="input-group input-group-sm mb-3">
                         <input
+                          id="clipboard"
                           type="text"
                           class="form-control"
-                          aria-label="Sizing example input"
+                          aria-label="Sizing  input"
                           aria-describedby="inputGroup-sizing-sm"
                           defaultValue={
                             "https://toolkit-online.vercel.app/" + props.url
@@ -51,7 +59,8 @@ export default function ToolsName(props) {
                         type="button"
                         class="btn btn-sm btn-copy text-dm"
                         data-bs-toggle="modal"
-                        data-bs-target="#exampleModal2"
+                        data-bs-target="#Modal2"
+                        onClick={clipboard}
                       >
                         <i class="fa-regular fa-clone text-light"></i>
                       </button>
@@ -72,18 +81,18 @@ export default function ToolsName(props) {
           </div>
           <div
             class="modal fade"
-            id="exampleModal2"
+            id="Modal2"
             tabIndex="-1"
-            aria-labelledby="exampleModalLabel"
+            aria-labelledby="ModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-sm">
+            <div class="modal-dialog modal-sm modal-dialog-scrollable">
               <div class="modal-content border-0">
                 <div
                   class="modal-header rounded border-0 py-1"
-                  style={{ backgroundColor: "#BFACE2" }}
+                  style={{ backgroundColor: "#BFACE2", color: "#5d3891" }}
                 >
-                  <h6 class="modal-title text-rubik" id="exampleModalLabel">
+                  <h6 class="modal-title text-rubik" id="ModalLabel">
                     Link copied!
                   </h6>
                   <button
@@ -93,7 +102,10 @@ export default function ToolsName(props) {
                     aria-label="Close"
                     style={{ boxShadow: "none" }}
                   >
-                    <i class="fa-solid fa-xmark fa-lg"></i>
+                    <i
+                      class="fa-solid fa-xmark fa-lg"
+                      style={{ color: "#5d3891" }}
+                    ></i>
                   </button>
                 </div>
               </div>
