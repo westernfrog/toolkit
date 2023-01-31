@@ -23,27 +23,27 @@ export default function Sidebar() {
             <ToolsCat
               icon={<i className="fa-solid fa-font fa-lg me-2"></i>}
               title="Case converter"
-              url="/tools/text"
+              url="/tools/case-converter"
             />
             <ToolsCat
               icon={<i className="fa-solid fa-text-height fa-lg me-2"></i>}
               title="Text formatting"
-              url="/tools/text"
+              url="/tools/text-format"
             />
             <ToolsCat
               icon={<i className="fa-solid fa-pencil fa-lg me-2"></i>}
-              title="Lorem ipsum generator"
-              url="/tools/text"
+              title="Lorem Ipsum generator"
+              url="/tools/lorem-ipsum-generator"
             />
             <ToolsCat
               icon={<i className="fa-solid fa-calculator fa-lg me-2"></i>}
               title="Letter counter"
-              url="/tools/text"
+              url="/tools/letter-counter"
             />
             <ToolsCat
               icon={<i className="fa-solid fa-laptop-code fa-lg me-2"></i>}
-              title="Prettify javascript"
-              url="/json"
+              title="Prettify Javascript"
+              url="/tools/javascript-formatter"
             />
           </ul>
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
@@ -60,17 +60,17 @@ export default function Sidebar() {
             <ToolsCat
               icon={<i className="fa-solid fa-photo-film fa-lg me-2"></i>}
               title="Image filters"
-              url="/tools/text"
+              url="/tools/image-filter"
             />
             <ToolsCat
               icon={<i className="fa-solid fa-image fa-lg me-2"></i>}
               title="Image to Base64 converter"
-              url="/tools/text"
+              url="/tools/image-to-base"
             />
             <ToolsCat
               icon={<i className="fa-solid fa-code fa-lg me-2"></i>}
               title="Base64 to Image converter"
-              url="/tools/text"
+              url="/tools/base-to-image"
             />
           </ul>
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
@@ -87,12 +87,12 @@ export default function Sidebar() {
             <ToolsCat
               icon={<i className="fa-regular fa-file-pdf fa-lg me-2"></i>}
               title="PDF to Word converter"
-              url="/tools/text"
+              url="/tools/pdf-to-word"
             />
             <ToolsCat
               icon={<i className="fa-regular fa-file-word fa-lg me-2"></i>}
               title="Word to PDF converter"
-              url="/tools/text"
+              url="/tools/word-to-pdf"
             />
           </ul>
         </div>

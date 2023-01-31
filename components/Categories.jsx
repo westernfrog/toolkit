@@ -46,7 +46,7 @@ export default function Categories() {
           }
           title="Miscellaneous tools"
           desc="Other tools"
-          url="/text"
+          url="/tools/misc"
           color={{ backgroundColor: "#f4ac36" }}
         />
       </div>

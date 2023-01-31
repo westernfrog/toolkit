@@ -34,7 +34,7 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" href="/">
                   Overview
                 </Link>
               </li>
@@ -130,7 +130,7 @@ export default function Header() {
                   className="nav-link"
                   href="https://www.buymeacoffee.com/amansinghme"
                 >
-                  <i className="fa-solid fa-bolt me-2 fa-lg"></i>
+                  <i className="fa-solid fa-bolt me-2 fa-lg text-warning"></i>
                   Support
                 </Link>
               </li>
@@ -144,7 +144,6 @@ export default function Header() {
                     data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight"
                   >
-                    <i className="fa-regular fa-comment me-2"></i>
                     Send a message
                   </button>
                 </div>

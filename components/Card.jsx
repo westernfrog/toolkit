@@ -4,7 +4,7 @@ export default function Card(props) {
   return (
     <>
       <div className="col-md-4">
-        <Link href={"/" + props.url} className="text-decoration-none text-dark">
+        <Link href={props.url} className="text-decoration-none text-dark">
           <div className="card border shadow-sm mb-3 py-3 text-dm">
             <div className="card-header bg-transparent border-0 mb-3 text-success">
               {props.icon}

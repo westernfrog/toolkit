@@ -13,9 +13,14 @@ export default function Json() {
           <Sidebar />
           <main className="col-md-9 ms-sm-auto col-lg-10 px-md-5 my-5">
             <div className="col-lg-11">
-              <Name id="text" name="Json formatter" />
+              <Name id="text" name="Miscellaneous tools" />
               <div className="row my-4">
-                <Card />
+                <Card
+                  url="/tools/javascript-formatter"
+                  icon={<i className="fa-regular fa-file-pdf fa-2xl"></i>}
+                  title="Javascript formatter"
+                  desc="Format/beautify your JavaScript code and copy the formatted code to your clipboard or download as a file"
+                />
               </div>
             </div>
           </main>
