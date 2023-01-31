@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light border-bottom text-dm bg-light sticky-top">
-        <div className="container-fluid mx-3 px-0">
+        <div className="container-fluid mx-3 px-0 px-lg-2">
           <Link className="navbar-brand text-rubik" href="/">
             <i className="fa-solid fa-screwdriver-wrench"></i>
           </Link>
@@ -72,7 +72,7 @@ export default function Header() {
                   <Dropdown
                     icon={<i className="fa-regular fa-file-code me-2"></i>}
                     title="JSON formatter"
-                    url="/json"
+                    url="/tools/misc"
                   />
                 </ul>
               </li>
