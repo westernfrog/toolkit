@@ -7,7 +7,7 @@ import Message from "./Message";
 export default function Header() {
   useEffect(() => {
     $(".hamburger").click(function () {
-      $(this).toggleClass("is-active");
+      $(this).toggleClass("fa-xmark");
     });
   }, []);
 
@@ -26,8 +26,9 @@ export default function Header() {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style={{ boxShadow: "none" }}
           >
-            <i className="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars hamburger"></i>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
