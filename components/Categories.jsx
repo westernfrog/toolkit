@@ -37,7 +37,7 @@ export default function Categories() {
           }
           title="JSON formatter"
           desc="Prettify json code"
-          url="/json"
+          url="/tools/javascript-formatter"
           color={{ backgroundColor: "#ef4146" }}
         />
         <Tools
