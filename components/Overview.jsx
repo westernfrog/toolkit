@@ -5,7 +5,7 @@ export default function Overview() {
   return (
     <>
       <div className="container-fluid">
-        <div className="text-lg-center mx-3">
+        <div className="text-lg-center mx-2">
           <div className="col-md-6 mx-auto mt-5">
             <h1 className="display-5 text-rubik fw-bold">
               Welcome to The ToolKit.

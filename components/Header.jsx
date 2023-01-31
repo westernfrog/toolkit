@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light border-bottom text-dm bg-light sticky-top">
-        <div className="container-fluid mx-3">
+        <div className="container-fluid mx-2">
           <Link className="navbar-brand text-rubik" href="/">
             <i className="fa-solid fa-screwdriver-wrench"></i>
           </Link>
