@@ -6,8 +6,14 @@ import Message from "./Message";
 
 export default function Header() {
   useEffect(() => {
-    $(".hamburger").click(function () {
-      $(this).toggleClass("fa-xmark");
+    $(".hamburger").on("click", function () {
+      if ($(".hamburger").hasClass("fa-bars")) {
+        $("hamburger").removeClass("fa-bars");
+        $("hamburger").addClass("fa-xmark");
+      } else if ($(".hamburger").hasClass("fa-bars")) {
+        $("hamburger").removeClass("fa-xmark");
+        $("hamburger").addClass("fa-bars");
+      }
     });
   }, []);
 
@@ -19,7 +25,7 @@ export default function Header() {
             <i className="fa-solid fa-screwdriver-wrench"></i>
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler px-0 border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
