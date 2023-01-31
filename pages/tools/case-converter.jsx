@@ -5,7 +5,14 @@ export default function CaseConverter(params) {
   return (
     <>
       <Header />
-      <Sidebar caseconverter="active-category" />
+      <div className="container-fluid">
+        <div className="row mx-0">
+          <Sidebar caseconverter="active-category" />
+          <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 my-4 px-0">
+            <div className="">jfhw</div>
+          </main>
+        </div>
+      </div>
     </>
   );
 }
