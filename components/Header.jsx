@@ -7,13 +7,8 @@ import Message from "./Message";
 export default function Header() {
   useEffect(() => {
     $(".hamburger").on("click", function () {
-      if ($(".hamburger").hasClass("fa-bars")) {
-        $("hamburger").removeClass("fa-bars");
-        $("hamburger").addClass("fa-xmark");
-      } else if ($(".hamburger").hasClass("fa-bars")) {
-        $("hamburger").removeClass("fa-xmark");
-        $("hamburger").addClass("fa-bars");
-      }
+      $(this).toggleClass("fa-xmark");
+      $(this).toggleClass("fa-bars");
     });
   }, []);
 
