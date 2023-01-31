@@ -7,6 +7,9 @@ body {
 .text-rubik {
   font-family: "Rubik", sans-serif;
 }
+.text-chivo {
+  font-family: "Chivo", sans-serif;
+}
 .nav-link {
   font-size: 14px;
   font-family: "DM Sans", sans-serif;
@@ -31,6 +34,20 @@ body {
 .toolsCat:hover {
   background-color: #c9ccd5;
 }
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #5d3891;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px #645cbb;
+  background-color: #555;
+}
+
 .card:hover {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15) !important;
   transform: scale(1.02);

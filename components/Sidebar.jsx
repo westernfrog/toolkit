@@ -6,13 +6,13 @@ export default function Sidebar() {
     <>
       <nav
         id="sidebarMenu"
-        className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse mt-4 mx-3"
+        className="col-md-4 col-lg-3 col-xl-2 d-md-block bg-light sidebar collapse mx-3 overflow-auto"
       >
-        <div className="position-sticky my-5">
-          <h4 className="sidebar-heading  px-3 mt-4 mb-2 text-dm fw-bold">
+        <div className="my-5">
+          <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
             <Link href={"/text"} className="text-decoration-none text-dark">
               <div className="row">
-                <div className="col-9">Text tools</div>
+                <div className="col-9 text-rubik">Text tools</div>
                 <div className="col-2 text-end px-0">
                   <i class="fa-solid fa-link"></i>
                 </div>
@@ -49,7 +49,7 @@ export default function Sidebar() {
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
             <Link href={"/image"} className="text-decoration-none text-dark">
               <div className="row">
-                <div className="col-9">Image tools</div>
+                <div className="col-9 text-rubik">Image tools</div>
                 <div className="col-2 text-end px-0">
                   <i class="fa-solid fa-link"></i>
                 </div>
@@ -76,7 +76,7 @@ export default function Sidebar() {
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
             <Link href={"/file"} className="text-decoration-none text-dark">
               <div className="row">
-                <div className="col-9">File tools</div>
+                <div className="col-9 text-rubik">File tools</div>
                 <div className="col-2 text-end px-0">
                   <i class="fa-solid fa-link"></i>
                 </div>

@@ -41,7 +41,7 @@ export default function Message() {
         aria-labelledby="offcanvasRightLabel"
       >
         <div className="offcanvas-header border-bottom shadow-sm px-4">
-          <h6 id="offcanvasRightLabel" className="mb-0 fw-bold">
+          <h6 id="offcanvasRightLabel" className="mb-0 fw-bold text-chivo">
             <i className="fa-regular fa-comment fa-xl me-2"></i>
             Send a message!
           </h6>

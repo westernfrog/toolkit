@@ -1,4 +1,3 @@
-import Card from "@/components/Card";
 import File0 from "@/components/File";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -14,7 +13,7 @@ export default function Playground() {
       <div className="container-fluid">
         <div className="row mx-0 px-md-5">
           <Sidebar />
-          <main className="col-md-9 ms-sm-auto col-lg-10 px-md-5 my-5">
+          <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4">
             <div className="col-lg-11">
               <Name name="Text tools" />
               <div className="row my-4">

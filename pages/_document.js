@@ -12,7 +12,7 @@ export default function Document() {
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Rubik:wght@400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Chivo&family=Rubik:wght@400;500&display=swap"
           rel="stylesheet"
         />
       </Head>

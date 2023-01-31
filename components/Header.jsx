@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light border-bottom text-dm bg-light sticky-top">
-        <div className="container-fluid mx-3">
+        <div className="container-fluid mx-3 px-0">
           <Link className="navbar-brand text-rubik" href="/">
             <i className="fa-solid fa-screwdriver-wrench"></i>
           </Link>
@@ -139,7 +139,7 @@ export default function Header() {
                 <div className="nav-link">
                   <button
                     type="button"
-                    className="btn btn-primary btn-sm m-0"
+                    className="btn btn-primary btn-sm m-0 text-chivo"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight"

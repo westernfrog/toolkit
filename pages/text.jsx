@@ -12,7 +12,7 @@ export default function Text() {
       <div className="container-fluid">
         <div className="row mx-0 px-md-5">
           <Sidebar />
-          <main className="col-md-9 ms-sm-auto col-lg-10 px-md-5 my-5">
+          <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-5">
             <div className="col-lg-11">
               <Name id="text" name="Text tools" />
               <div className="row my-4">
