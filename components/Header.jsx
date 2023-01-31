@@ -31,7 +31,7 @@ export default function Header() {
           >
             <i className="fa-solid fa-bars hamburger"></i>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse mt-3 mt-lg-0" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link className="nav-link active" href="/">
