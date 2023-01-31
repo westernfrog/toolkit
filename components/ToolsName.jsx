@@ -8,7 +8,7 @@ export default function ToolsName(props) {
 
   return (
     <>
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 border-bottom">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2">
         <h1 class="h2 text-dm fw-bold">{props.name}</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <button
@@ -51,6 +51,7 @@ export default function ToolsName(props) {
                           defaultValue={
                             "https://toolkit-online.vercel.app/" + props.url
                           }
+                          disabled
                         />
                       </div>
                     </div>
