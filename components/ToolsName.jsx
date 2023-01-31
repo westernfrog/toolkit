@@ -47,7 +47,12 @@ export default function ToolsName(props) {
                       </div>
                     </div>
                     <div className="col-2 col-lg-1 text-end">
-                      <button type="button" class="btn btn-sm btn-copy text-dm">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-copy text-dm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2"
+                      >
                         <i class="fa-regular fa-clone text-light"></i>
                       </button>
                     </div>
@@ -60,6 +65,35 @@ export default function ToolsName(props) {
                     data-bs-dismiss="modal"
                   >
                     Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="exampleModal2"
+            tabIndex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content border-0">
+                <div
+                  class="modal-header rounded border-0 py-1"
+                  style={{ backgroundColor: "#BFACE2" }}
+                >
+                  <h6 class="modal-title text-rubik" id="exampleModalLabel">
+                    Link copied!
+                  </h6>
+                  <button
+                    type="button"
+                    class="btn px-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    style={{ boxShadow: "none" }}
+                  >
+                    <i class="fa-solid fa-xmark fa-lg"></i>
                   </button>
                 </div>
               </div>
