@@ -42,7 +42,7 @@ export default function MoreTools(props) {
               <h4 className="sidebar-heading text-dm fw-bold">
                 <Link href={"/text"} className="text-decoration-none text-dark">
                   <div className="row g-0">
-                    <div className="col-10 text-chivo fw-bold h6 mb-0">
+                    <div className="col-10 text-chivo fw-bold mb-0">
                       Text tools
                     </div>
                     <div className="col-2 text-end px-0">
@@ -89,7 +89,7 @@ export default function MoreTools(props) {
                   className="text-decoration-none text-dark"
                 >
                   <div className="row g-0">
-                    <div className="col-10 text-chivo fw-bold h6 mb-0">
+                    <div className="col-10 text-chivo fw-bold mb-0">
                       Image tools
                     </div>
                     <div className="col-2 text-end px-0">
@@ -121,7 +121,7 @@ export default function MoreTools(props) {
               <h4 className="sidebar-heading mt-3 text-dm fw-bold">
                 <Link href={"/file"} className="text-decoration-none text-dark">
                   <div className="row g-0">
-                    <div className="col-10 text-chivo fw-bold h6 mb-0">
+                    <div className="col-10 text-chivo fw-bold mb-0">
                       File tools
                     </div>
                     <div className="col-2 text-end px-0">
