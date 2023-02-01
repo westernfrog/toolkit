@@ -58,30 +58,30 @@ export default function JSFormat(params) {
                   <div className="col-6 d-grid">
                     <button
                       type="button"
-                      class="btn btn-sm btn-share border text-dm me-2 my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
+                      className="btn btn-sm btn-share border text-dm me-2 my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
                       style={{
                         borderRadius: "10px",
                         fontSize: "14px",
                       }}
                     >
                       Format
-                      <i class="fa-solid fa-arrow-right fa-color fa-lg ms-2"></i>
+                      <i className="fa-solid fa-arrow-right fa-color fa-lg ms-2"></i>
                     </button>
                   </div>
                   <div className="col-6 d-grid">
                     <button
                       type="button"
-                      class="btn btn-sm btn-share border text-dm my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
+                      className="btn btn-sm btn-share border text-dm my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
                       style={{ borderRadius: "10px" }}
                     >
-                      <i class="fa-solid fa-recycle fa-color me-2 fa-lg"></i>
+                      <i className="fa-solid fa-recycle fa-color me-2 fa-lg"></i>
                       Reset
                     </button>
                   </div>
                 </div>
               </div>
 
-              <div className="col-md-6">
+              <div className="col-md-6 my-3 my-lg-0">
                 <div className="border-0" style={{ borderRadius: "10px" }}>
                   <div className="form-floating text-dm">
                     <textarea
@@ -125,7 +125,7 @@ export default function JSFormat(params) {
                           className="btn btn-share btn-sm btn-success my-3 rounded fw-bold fs-7 py-2"
                           disabled
                         >
-                          <i class="fa-solid fa-check text-light"></i>
+                          <i className="fa-solid fa-check text-light"></i>
                         </button>
                       </Toast>
                     </div>
