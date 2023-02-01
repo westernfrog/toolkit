@@ -11,7 +11,7 @@ export default function ToolsCatMd(props) {
         >
           <div className="row d-flex align-items-center justify-content-between">
             <div className="col-2 fa-color">{props.icon}</div>
-            <div className="col-10 text-dark tools-nav p-2 rounded">
+            <div className="col-10 text-dark tools-nav p-2 rounded fs-6">
               {props.title}
             </div>
           </div>
