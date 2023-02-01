@@ -28,7 +28,7 @@ export default function MoreTools(props) {
           </h6>
           <button
             type="button"
-            className="text-reset btn pe-0 btnclose"
+            className="text-reset btn pe-0 btn-shrink"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
             style={{ boxShadow: "none" }}
@@ -42,7 +42,9 @@ export default function MoreTools(props) {
               <h4 className="sidebar-heading text-dm fw-bold">
                 <Link href={"/text"} className="text-decoration-none text-dark">
                   <div className="row g-0">
-                    <div className="col-10 text-rubik">Text tools</div>
+                    <div className="col-10 text-chivo fw-bold h6 mb-0">
+                      Text tools
+                    </div>
                     <div className="col-2 text-end px-0">
                       <i className="fa-solid fa-link"></i>
                     </div>
@@ -87,7 +89,9 @@ export default function MoreTools(props) {
                   className="text-decoration-none text-dark"
                 >
                   <div className="row g-0">
-                    <div className="col-10 text-rubik">Image tools</div>
+                    <div className="col-10 text-chivo fw-bold h6 mb-0">
+                      Image tools
+                    </div>
                     <div className="col-2 text-end px-0">
                       <i className="fa-solid fa-link"></i>
                     </div>
@@ -117,7 +121,9 @@ export default function MoreTools(props) {
               <h4 className="sidebar-heading mt-3 text-dm fw-bold">
                 <Link href={"/file"} className="text-decoration-none text-dark">
                   <div className="row g-0">
-                    <div className="col-10 text-rubik">File tools</div>
+                    <div className="col-10 text-chivo fw-bold h6 mb-0">
+                      File tools
+                    </div>
                     <div className="col-2 text-end px-0">
                       <i className="fa-solid fa-link"></i>
                     </div>

@@ -38,7 +38,7 @@ export default function Categories() {
           title="Miscellaneous tools"
           desc="Other tools"
           url="/tools/misc"
-          color={{ backgroundColor: "#f4ac36" }}
+          color={{ backgroundColor: "#ef4146" }}
         />
         <Tools
           icon={
@@ -47,7 +47,7 @@ export default function Categories() {
           title="JSON formatter"
           desc="Prettify json code"
           url="/tools/javascript-formatter"
-          color={{ backgroundColor: "#ef4146" }}
+          color={{ backgroundColor: "#f4ac36" }}
         />
       </div>
     </>

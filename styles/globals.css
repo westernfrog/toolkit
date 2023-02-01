@@ -19,17 +19,17 @@ body {
 .dropdown-item {
   font-size: 14px;
 }
-.alink :hover {
+.a-link :hover {
   opacity: 90%;
 }
 .tool-link :hover {
   opacity: 80%;
 }
-.btnclose:hover {
-  transform: scale(1.05);
+.btn-shrink:hover {
+  transform: scale(0.97);
   transition: transform 100ms ease-in-out;
 }
-.btnclose {
+.btn-shrink {
   transition: transform 100ms ease-in-out;
 }
 .toolsCat:hover {
@@ -41,12 +41,21 @@ body {
 .fa-color {
   color: #674188;
 }
+.fs-7 {
+  font-size: 14px;
+}
+.rounded {
+  border-radius: 8px !important;
+}
+.bg-color {
+  background-color: #eeeeee;
+}
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px #5d3891;
   background-color: #f5f5f5;
 }
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 4px;
 }
 ::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 6px #645cbb;
@@ -81,6 +90,7 @@ body {
   width: auto;
   border: 0;
   box-shadow: none;
+  display: grid;
 }
 .sidebar {
   position: fixed;

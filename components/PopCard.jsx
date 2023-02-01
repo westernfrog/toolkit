@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function PopCard(props) {
   return (
     <>
-      <div className="col-md-6 border-0 alink">
+      <div className="col-md-6 border-0 a-link">
         <Link href={props.url} className="text-decoration-none text-light">
           <div
             className="card border-0 mb-3 text-start px-2 shadow"

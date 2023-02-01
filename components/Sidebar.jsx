@@ -12,7 +12,9 @@ export default function Sidebar(props) {
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
             <Link href={"/text"} className="text-decoration-none text-dark">
               <div className="row g-0">
-                <div className="col-10 text-rubik">Text tools</div>
+                <div className="col-10 text-chivo fw-bold h6 mb-0">
+                  Text tools
+                </div>
                 <div className="col-2 text-end px-0">
                   <i className="fa-solid fa-link"></i>
                 </div>
@@ -54,7 +56,9 @@ export default function Sidebar(props) {
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
             <Link href={"/image"} className="text-decoration-none text-dark">
               <div className="row g-0">
-                <div className="col-10 text-rubik">Image tools</div>
+                <div className="col-10 text-chivo fw-bold h6 mb-0">
+                  Image tools
+                </div>
                 <div className="col-2 text-end px-0">
                   <i className="fa-solid fa-link"></i>
                 </div>
@@ -84,7 +88,9 @@ export default function Sidebar(props) {
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
             <Link href={"/file"} className="text-decoration-none text-dark">
               <div className="row g-0">
-                <div className="col-10 text-rubik">File tools</div>
+                <div className="col-10 text-chivo fw-bold h6 mb-0">
+                  File tools
+                </div>
                 <div className="col-2 text-end px-0">
                   <i className="fa-solid fa-link"></i>
                 </div>

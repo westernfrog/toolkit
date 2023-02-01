@@ -47,7 +47,7 @@ export default function Message() {
           </h6>
           <button
             type="button"
-            className="text-reset btn pe-0 btnclose"
+            className="text-reset btn pe-0 btn-shrink"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
             style={{ boxShadow: "none" }}
@@ -76,11 +76,11 @@ export default function Message() {
               rows="4"
               value={formData.user}
               placeholder="what's on your mind?..."
-              style={{ resize: "none" }}
+              style={{ resize: "none", borderRadius: "10px" }}
               onChange={(e) => handleChange(e)}
             ></textarea>
             <button
-              className="btn btn-success btn-sm my-3 rounded-pill px-3 text-rubik btn-Reload btnclose"
+              className="btn btn-success btn-sm my-3 rounded-pill px-3 text-rubik btn-Reload btn-shrink"
               role="button"
               onClick={handleSubmit}
               autoCorrect="false"
@@ -94,7 +94,7 @@ export default function Message() {
             <Link
               href="https://www.buymeacoffee.com/amansinghme"
               target="_blank"
-              className="alink"
+              className="a-link"
             >
               <Image
                 className="mt-3"
