@@ -71,7 +71,7 @@ export default function Header() {
                   />
                   <Dropdown
                     icon={<i className="fa-regular fa-file-code me-2"></i>}
-                    title="JSON formatter"
+                    title="Miscellaneous tools"
                     url="/tools/misc"
                   />
                 </ul>
