@@ -18,7 +18,7 @@ export default function TextCard() {
       <Card
         url="/tools/lorem-ipsum-generator"
         icon={<i className="fa-solid fa-pencil fa-2xl"></i>}
-        title="Lorem ipsum generator"
+        title="Lorem Ipsum generator"
         desc="Create your placeholder texts with desired number of paragraphs and properties."
       />
       <Card
