@@ -69,7 +69,7 @@ export default function Message() {
               would surely make The ToolKit better.
             </p>
           </div>
-          <div>
+          <div className="d-grid">
             <textarea
               className="form-control border bg-light mt-2"
               id="user"
