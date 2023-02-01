@@ -71,7 +71,7 @@ export default function JSFormat(params) {
                   <div className="col-6 d-grid">
                     <button
                       type="button"
-                      class="btn btn-sm btn-share border text-dm me-2 my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
+                      class="btn btn-sm btn-share border text-dm my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
                       style={{ borderRadius: "10px" }}
                     >
                       <i class="fa-solid fa-recycle fa-color me-2 fa-lg"></i>
