@@ -66,8 +66,8 @@ export default function ToolsName(props) {
                       href={"/text"}
                       className="text-decoration-none text-dark"
                     >
-                      <div className="row">
-                        <div className="col-9 text-rubik">Text tools</div>
+                      <div className="row g-0">
+                        <div className="col-10 text-rubik">Text tools</div>
                         <div className="col-2 text-end px-0">
                           <i class="fa-solid fa-link"></i>
                         </div>
@@ -117,8 +117,8 @@ export default function ToolsName(props) {
                       href={"/image"}
                       className="text-decoration-none text-dark"
                     >
-                      <div className="row">
-                        <div className="col-9 text-rubik">Image tools</div>
+                      <div className="row g-0">
+                        <div className="col-10 text-rubik">Image tools</div>
                         <div className="col-2 text-end px-0">
                           <i class="fa-solid fa-link"></i>
                         </div>
@@ -152,8 +152,8 @@ export default function ToolsName(props) {
                       href={"/file"}
                       className="text-decoration-none text-dark"
                     >
-                      <div className="row">
-                        <div className="col-9 text-rubik">File tools</div>
+                      <div className="row g-0">
+                        <div className="col-10 text-rubik">File tools</div>
                         <div className="col-2 text-end px-0">
                           <i class="fa-solid fa-link"></i>
                         </div>
@@ -163,7 +163,7 @@ export default function ToolsName(props) {
                   <ul className="nav flex-column">
                     <ToolsCat
                       icon={
-                        <i className="fa-regular fa-file-pdf fa-lg me-2"></i>
+                        <i className="fa-regular fa-file-pdf fa-xl me-2"></i>
                       }
                       title="PDF to Word converter"
                       url="/tools/pdf-to-word"
@@ -171,7 +171,7 @@ export default function ToolsName(props) {
                     />
                     <ToolsCat
                       icon={
-                        <i className="fa-regular fa-file-word fa-lg me-2"></i>
+                        <i className="fa-regular fa-file-word fa-xl me-2"></i>
                       }
                       title="Word to PDF converter"
                       url="/tools/word-to-pdf"

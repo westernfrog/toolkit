@@ -11,8 +11,8 @@ export default function Sidebar(props) {
         <div className="my-5">
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
             <Link href={"/text"} className="text-decoration-none text-dark">
-              <div className="row">
-                <div className="col-9 text-rubik">Text tools</div>
+              <div className="row g-0">
+                <div className="col-10 text-rubik">Text tools</div>
                 <div className="col-2 text-end px-0">
                   <i class="fa-solid fa-link"></i>
                 </div>
@@ -53,8 +53,8 @@ export default function Sidebar(props) {
           </ul>
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
             <Link href={"/image"} className="text-decoration-none text-dark">
-              <div className="row">
-                <div className="col-9 text-rubik">Image tools</div>
+              <div className="row g-0">
+                <div className="col-10 text-rubik">Image tools</div>
                 <div className="col-2 text-end px-0">
                   <i class="fa-solid fa-link"></i>
                 </div>
@@ -83,8 +83,8 @@ export default function Sidebar(props) {
           </ul>
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">
             <Link href={"/file"} className="text-decoration-none text-dark">
-              <div className="row">
-                <div className="col-9 text-rubik">File tools</div>
+              <div className="row g-0">
+                <div className="col-10 text-rubik">File tools</div>
                 <div className="col-2 text-end px-0">
                   <i class="fa-solid fa-link"></i>
                 </div>
@@ -93,13 +93,13 @@ export default function Sidebar(props) {
           </h4>
           <ul className="nav flex-column">
             <ToolsCat
-              icon={<i className="fa-regular fa-file-pdf fa-lg me-2"></i>}
+              icon={<i className="fa-regular fa-file-pdf fa-xl me-2"></i>}
               title="PDF to Word converter"
               url="/tools/pdf-to-word"
               active={props.pdftoword}
             />
             <ToolsCat
-              icon={<i className="fa-regular fa-file-word fa-lg me-2"></i>}
+              icon={<i className="fa-regular fa-file-word fa-xl me-2"></i>}
               title="Word to PDF converter"
               url="/tools/word-to-pdf"
               active={props.wordtopdf}

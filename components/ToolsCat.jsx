@@ -5,7 +5,7 @@ export default function ToolsCat(props) {
     <>
       <li className="nav-item">
         <Link
-          className="nav-link toolsCat mx-0 rounded-start"
+          className="nav-link toolsCat mx-0 rounded"
           href={props.url}
           id={props.active}
         >

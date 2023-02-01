@@ -4,11 +4,12 @@ import ToolsName from "@/components/ToolsName";
 import { useState } from "react";
 
 export default function LetterCounter() {
-  const [text, setText] = useState("0");
+  const [text, setText] = useState("");
 
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
+
   return (
     <>
       <Header />
