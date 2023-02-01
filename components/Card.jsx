@@ -6,10 +6,7 @@ export default function Card(props) {
       <div className="col-md-4">
         <Link href={props.url} className="text-decoration-none text-dark">
           <div className="card border shadow-sm mb-3 py-3 text-dm">
-            <div
-              className="card-header bg-transparent border-0 mb-3"
-              style={{ color: "#674188" }}
-            >
+            <div className="card-header bg-transparent fa-color border-0 mb-3">
               {props.icon}
             </div>
             <div className="card-body">
@@ -17,7 +14,7 @@ export default function Card(props) {
               <p className="card-text">{props.desc} </p>
             </div>
             <div className="card-footer bg-transparent border-0 text-chivo">
-              Open &gt;
+              Open <span className="fa-color fw-bold">&gt;</span>
             </div>
           </div>
         </Link>

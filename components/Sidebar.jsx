@@ -6,7 +6,7 @@ export default function Sidebar(props) {
     <>
       <nav
         id="sidebarMenu"
-        className="col-md-4 col-lg-3 col-xl-2 d-md-block bg-light sidebar collapse mx-3 overflow-auto"
+        className="col-md-3 col-lg-3 col-xl-2 d-md-block bg-light sidebar collapse mx-3 overflow-auto"
       >
         <div className="my-5">
           <h4 className="sidebar-heading px-3 mt-4 mb-2 text-dm fw-bold">

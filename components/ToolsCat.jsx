@@ -10,9 +10,7 @@ export default function ToolsCat(props) {
           id={props.active}
         >
           <div className="row">
-            <div className="col-2" style={{ color: "#674188" }}>
-              {props.icon}
-            </div>
+            <div className="col-2 fa-color">{props.icon}</div>
             <div className="col-10 text-dark">{props.title}</div>
           </div>
         </Link>

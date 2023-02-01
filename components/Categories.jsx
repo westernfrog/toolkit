@@ -33,21 +33,21 @@ export default function Categories() {
         />
         <Tools
           icon={
-            <i className="fa-solid fa-laptop-code fa-xl mx-auto text-light"></i>
-          }
-          title="JSON formatter"
-          desc="Prettify json code"
-          url="/tools/javascript-formatter"
-          color={{ backgroundColor: "#ef4146" }}
-        />
-        <Tools
-          icon={
             <i className="fa-solid fa-hands-asl-interpreting fa-xl mx-auto text-light"></i>
           }
           title="Miscellaneous tools"
           desc="Other tools"
           url="/tools/misc"
           color={{ backgroundColor: "#f4ac36" }}
+        />
+        <Tools
+          icon={
+            <i className="fa-solid fa-laptop-code fa-xl mx-auto text-light"></i>
+          }
+          title="JSON formatter"
+          desc="Prettify json code"
+          url="/tools/javascript-formatter"
+          color={{ backgroundColor: "#ef4146" }}
         />
       </div>
     </>

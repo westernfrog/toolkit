@@ -17,7 +17,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-light border-bottom text-dm bg-light sticky-top">
         <div className="container-fluid mx-2">
           <Link className="navbar-brand text-rubik me-0 me-lg-3" href="/">
-            <i className="fa-solid fa-screwdriver-wrench"></i>
+            <i className="fa-solid fa-screwdriver-wrench fa-color"></i>
           </Link>
           <button
             className="navbar-toggler px-0 border-0"
