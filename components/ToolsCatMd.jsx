@@ -5,7 +5,7 @@ export default function ToolsCatMd(props) {
     <>
       <li className="nav-item">
         <Link
-          className="nav-link mx-0 rounded ps-0 py-0"
+          className="nav-link mx-0 rounded ps-0 py-0 btn-shrink"
           href={props.url}
           id={props.active}
         >

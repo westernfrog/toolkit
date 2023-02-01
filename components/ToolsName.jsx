@@ -17,7 +17,7 @@ export default function ToolsName(props) {
         <div className="btn-toolbar my-2 mb-md-0">
           <button
             type="button"
-            className="btn btn-sm btn-share text-dm p-2 me-2"
+            className="btn btn-sm btn-share btn-shrink text-dm p-2 me-2"
             data-bs-toggle="modal"
             data-bs-target="#Modal"
           >
@@ -88,7 +88,7 @@ export default function ToolsName(props) {
                   </Toast>
                   <button
                     type="button"
-                    className="btn btn-share btn-sm"
+                    className="btn btn-share btn-sm btn-shrink"
                     data-bs-dismiss="modal"
                   >
                     Close

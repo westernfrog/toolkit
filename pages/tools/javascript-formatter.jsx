@@ -4,14 +4,16 @@ import Sidebar from "@/components/Sidebar";
 import ToolsName from "@/components/ToolsName";
 import { useState } from "react";
 import Toast from "react-bootstrap/Toast";
+import $ from "jquery";
 
 export default function JSFormat(params) {
   const [text, setText] = useState("");
   const [show, setShow] = useState(false);
 
   const handleOnChange = (event) => {
-    setText(event.target.value);
+    setText(JSON.stringify(event.target.value));
   };
+
   function clipboard() {
     let text = document.getElementById("clipboard");
     text.select();
@@ -42,7 +44,6 @@ export default function JSFormat(params) {
                         borderRadius: "10px",
                         resize: "none",
                       }}
-                      onChange={handleOnChange}
                     ></textarea>
                     <label
                       htmlFor="floatingTextarea"
@@ -58,11 +59,12 @@ export default function JSFormat(params) {
                   <div className="col-6 d-grid">
                     <button
                       type="button"
-                      className="btn btn-sm btn-share border text-dm me-2 my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
+                      className="btn btn-sm btn-share border text-dm me-2 my-3 rounded text-dark text-dm fw-bold fs-7 py-2 btn-shrink"
                       style={{
                         borderRadius: "10px",
                         fontSize: "14px",
                       }}
+                      onClick={handleOnChange}
                     >
                       Format
                       <i className="fa-solid fa-arrow-right fa-color fa-lg ms-2"></i>
@@ -71,7 +73,7 @@ export default function JSFormat(params) {
                   <div className="col-6 d-grid">
                     <button
                       type="button"
-                      className="btn btn-sm btn-share border text-dm my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
+                      className="btn btn-sm btn-share border text-dm my-3 rounded text-dark text-dm fw-bold fs-7 py-2 btn-shrink"
                       style={{ borderRadius: "10px" }}
                     >
                       <i className="fa-solid fa-recycle fa-color me-2 fa-lg"></i>
@@ -85,7 +87,7 @@ export default function JSFormat(params) {
                 <div className="border-0" style={{ borderRadius: "10px" }}>
                   <div className="form-floating text-dm">
                     <textarea
-                      className="form-control shadow-sm"
+                      className="form-control shadow-sm output border bg-white"
                       placeholder="enter the text.."
                       id="floatingTextarea"
                       style={{
@@ -93,20 +95,23 @@ export default function JSFormat(params) {
                         borderRadius: "10px",
                         resize: "none",
                       }}
-                      onChange={handleOnChange}
-                    ></textarea>
+                      readOnly
+                    >
+                      {text}
+                    </textarea>
                     <label
                       htmlFor="floatingTextarea"
-                      className="text-muted text-chivo fs-7"
+                      className="text-muted text-chivo"
+                      style={{ fontSize: "14px" }}
                     >
-                      Output
+                      {text}
                     </label>
                   </div>
                   <div className="row g-0">
                     <div className="col-10 d-grid">
                       <button
                         type="button"
-                        className="btn btn-sm btn-share border text-dm me-2 my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
+                        className="btn btn-sm btn-share btn-shrink border text-dm me-2 my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
                         onClick={(clipboard, () => setShow(true))}
                       >
                         COPY TO CLIPBOARD

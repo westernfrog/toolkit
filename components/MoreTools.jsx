@@ -5,7 +5,7 @@ export default function MoreTools(props) {
   return (
     <>
       <button
-        className="btn btn-sm btn-share text-dm p-2 d-lg-none"
+        className="btn btn-sm btn-share btn-shrink text-dm p-2 d-lg-none"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasExample"

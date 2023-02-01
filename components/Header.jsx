@@ -139,7 +139,7 @@ export default function Header() {
                 <div className="nav-link">
                   <button
                     type="button"
-                    className="btn btn-primary btn-sm m-0 text-chivo"
+                    className="btn btn-primary btn-sm btn-shrink m-0 text-chivo"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight"
