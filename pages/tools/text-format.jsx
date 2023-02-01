@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import ToolsName from "@/components/ToolsName";
 
-export default function TextFormat(params) {
+export default function TextFormat() {
   return (
     <>
       <Header />

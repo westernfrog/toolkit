@@ -4,14 +4,17 @@ import Sidebar from "@/components/Sidebar";
 import ToolsName from "@/components/ToolsName";
 import { useState } from "react";
 import Toast from "react-bootstrap/Toast";
-import $ from "jquery";
+import JSONPretty from "react-json-pretty";
+import "react-json-pretty/themes/monikai.css";
 
-export default function JSFormat(params) {
+export default function JSFormat() {
   const [text, setText] = useState("");
   const [show, setShow] = useState(false);
 
   const handleOnChange = (event) => {
-    setText(JSON.stringify(event.target.value));
+    let newText = event.target.value;
+
+    setText(newText);
   };
 
   function clipboard() {
@@ -32,11 +35,11 @@ export default function JSFormat(params) {
               url="tools/javascript-formatter"
             />
             <div className="row text-center text-rubik my-3">
-              <div className="col-md-6">
+              <div className="col-md-4">
                 <div className="border-0" style={{ borderRadius: "10px" }}>
                   <div className="form-floating text-dm">
                     <textarea
-                      className="form-control shadow-sm"
+                      className="form-control shadow-sm fs-7"
                       placeholder="enter the text.."
                       id="floatingTextarea"
                       style={{
@@ -44,6 +47,7 @@ export default function JSFormat(params) {
                         borderRadius: "10px",
                         resize: "none",
                       }}
+                      onChange={handleOnChange}
                     ></textarea>
                     <label
                       htmlFor="floatingTextarea"
@@ -59,12 +63,11 @@ export default function JSFormat(params) {
                   <div className="col-6 d-grid">
                     <button
                       type="button"
-                      className="btn btn-sm btn-share border text-dm me-2 my-3 rounded text-dark text-dm fw-bold fs-7 py-2 btn-shrink"
+                      className="btn btn-sm btn-share border text-dm me-2 my-3 rounded text-uppercase text-dark text-dm fw-bold fs-7 py-2 btn-shrink"
                       style={{
                         borderRadius: "10px",
                         fontSize: "14px",
                       }}
-                      onClick={handleOnChange}
                     >
                       Format
                       <i className="fa-solid fa-arrow-right fa-color fa-lg ms-2"></i>
@@ -73,7 +76,7 @@ export default function JSFormat(params) {
                   <div className="col-6 d-grid">
                     <button
                       type="button"
-                      className="btn btn-sm btn-share border text-dm my-3 rounded text-dark text-dm fw-bold fs-7 py-2 btn-shrink"
+                      className="btn btn-sm btn-share border text-dm my-3 rounded text-uppercase text-dark text-dm fw-bold fs-7 py-2 btn-shrink"
                       style={{ borderRadius: "10px" }}
                     >
                       <i className="fa-solid fa-recycle fa-color me-2 fa-lg"></i>
@@ -83,29 +86,35 @@ export default function JSFormat(params) {
                 </div>
               </div>
 
-              <div className="col-md-6 mt-3 mt-lg-0">
+              <div className="col-md-8 mt-3 mt-lg-0">
                 <div className="border-0" style={{ borderRadius: "10px" }}>
-                  <div className="form-floating text-dm">
-                    <textarea
-                      className="form-control shadow-sm output border bg-white"
-                      placeholder="enter the text.."
-                      id="floatingTextarea"
-                      style={{
-                        height: "400px",
-                        borderRadius: "10px",
-                        resize: "none",
+                  <div
+                    className="text-dm border border-2 rounded shadow-sm text-start p-3 overflow-auto bg-dark"
+                    style={{ height: "400px" }}
+                  >
+                    <JSONPretty
+                      id="json-pretty"
+                      data={text}
+                      replacer={function (key, value) {
+                        if (key === "cccc") {
+                          value += "~~~abc";
+                        }
+                        if (key === "gggg") {
+                          value *= 10;
+                        }
+                        return value;
                       }}
-                      readOnly
-                    >
-                      {text}
-                    </textarea>
-                    <label
-                      htmlFor="floatingTextarea"
-                      className="text-muted text-chivo"
-                      style={{ fontSize: "14px" }}
-                    >
-                      {text}
-                    </label>
+                      space="4"
+                      theme={{
+                        main: "line-height:1.3;color:#9FC9F3;overflow:auto;",
+                        error:
+                          "line-height:1.3;color:#66d9ef;background:#272822;overflow:auto;",
+                        key: "color:#A460ED;",
+                        string: "color:#FD841F;",
+                        value: "color:#ADDDD0;",
+                        boolean: "color:#10A19D;",
+                      }}
+                    ></JSONPretty>
                   </div>
                   <div className="row g-0">
                     <div className="col-10 d-grid">
@@ -115,7 +124,7 @@ export default function JSFormat(params) {
                         onClick={(clipboard, () => setShow(true))}
                       >
                         COPY TO CLIPBOARD
-                        <i className="fa-regular fa-clone fa-color ms-2"></i>
+                        <i className="fa-solid fa-copy fa-color ms-2"></i>
                       </button>
                     </div>
                     <div className="col-2">
@@ -127,7 +136,7 @@ export default function JSFormat(params) {
                       >
                         <button
                           type="button"
-                          className="btn btn-share btn-sm btn-success my-3 rounded fw-bold fs-7 py-2"
+                          className="btn btn-share btn-sm btn-success rounded fw-bold fs-7 py-2 my-3"
                           disabled
                         >
                           <i className="fa-solid fa-check text-light"></i>

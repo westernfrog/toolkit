@@ -63,7 +63,7 @@ export default function ToolsName(props) {
                     <div className="col-2 col-lg-1 text-end">
                       <button
                         type="button"
-                        className="btn btn-sm btn-copy text-dm"
+                        className="btn btn-sm btn-copy btn-shrink text-dm"
                         onClick={(clipboard, () => setShow(true))}
                       >
                         <i className="fa-regular fa-clone text-light"></i>
@@ -75,7 +75,7 @@ export default function ToolsName(props) {
                   <Toast
                     onClose={() => setShow(false)}
                     show={show}
-                    delay={8000}
+                    delay={5000}
                     autohide
                   >
                     <button
