@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>The ToolKit</title>
         <meta
-          name="description"
+          name="deScription"
           content="The ToolKit is an online tool factory where you can get all tools you needed in one place. Every tool is designed to solve a problem with minimum number of steps to save time of the users and decrease the complexity of the operation."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

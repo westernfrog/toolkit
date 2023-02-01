@@ -1,10 +1,10 @@
-import File0 from "@/components/File";
+import FileCard from "@/components/File";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Image0 from "@/components/Image";
+import ImageCard from "@/components/Image";
 import Name from "@/components/Name";
 import Sidebar from "@/components/Sidebar";
-import Text0 from "@/components/Text";
+import TextCard from "@/components/Text";
 
 export default function Playground() {
   return (
@@ -17,19 +17,19 @@ export default function Playground() {
             <div className="col-lg-11">
               <Name name="Text tools" />
               <div className="row my-4">
-                <Text0 />
+                <TextCard />
               </div>
             </div>
             <div className="col-lg-10">
               <Name name="Image tools" />
               <div className="row my-4">
-                <Image0 />
+                <ImageCard />
               </div>
             </div>
             <div className="col-lg-10">
               <Name name="File tools" />
               <div className="row my-4">
-                <File0 />
+                <FileCard />
               </div>
             </div>
           </main>

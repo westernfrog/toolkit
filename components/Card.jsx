@@ -5,7 +5,10 @@ export default function Card(props) {
     <>
       <div className="col-md-4">
         <Link href={props.url} className="text-decoration-none text-dark">
-          <div className="card border shadow-sm mb-3 py-3 text-dm">
+          <div
+            className="card border shadow-sm mb-3 py-3 px-2 text-dm"
+            style={{ borderRadius: "10px" }}
+          >
             <div className="card-header bg-transparent fa-color border-0 mb-3">
               {props.icon}
             </div>

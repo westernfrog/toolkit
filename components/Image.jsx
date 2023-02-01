@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-export default function Image0() {
+export default function ImageCard() {
   return (
     <>
       <Card

@@ -1,4 +1,6 @@
 import MoreTools from "./MoreTools";
+import React, { useState } from "react";
+import Toast from "react-bootstrap/Toast";
 
 export default function ToolsName(props) {
   function clipboard() {
@@ -7,48 +9,48 @@ export default function ToolsName(props) {
     text.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(text.value);
   }
-
+  const [show, setShow] = useState(false);
   return (
     <>
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2">
-        <h1 class="h2 text-dm fw-bold">{props.name}</h1>
-        <div class="btn-toolbar my-2 mb-md-0">
+      <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2">
+        <h1 className="h2 text-dm fw-bold">{props.name}</h1>
+        <div className="btn-toolbar my-2 mb-md-0">
           <button
             type="button"
-            class="btn btn-sm btn-share text-dm p-2 me-2"
+            className="btn btn-sm btn-share text-dm p-2 me-2"
             data-bs-toggle="modal"
             data-bs-target="#Modal"
           >
-            <i class="fa-solid fa-share-nodes me-2 fa-color"></i>
+            <i className="fa-solid fa-share-nodes me-2 fa-color"></i>
             Share tools
           </button>
           <MoreTools />
           <div
-            class="modal fade"
+            className="modal fade"
             id="Modal"
             tabIndex="-1"
             aria-labelledby="ModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content text-rubik bg-light border-0">
-                <div class="modal-header border-0">
-                  <h5 class="modal-title" id="ModalLabel">
+            <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div className="modal-content text-rubik bg-light border-0">
+                <div className="modal-header border-0">
+                  <h5 className="modal-title" id="ModalLabel">
                     Share tools
                   </h5>
                 </div>
-                <div class="modal-body py-0">
+                <div className="modal-body py-0">
                   <p style={{ fontSize: "14px" }}>
                     Share this link among your family and friends to make their
                     work easier!
                   </p>
                   <div className="row g-0">
                     <div className="col-10 col-lg-11">
-                      <div class="input-group input-group-sm mb-3">
+                      <div className="input-group input-group-sm mb-3">
                         <input
                           id="clipboard"
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           aria-label="Sizing  input"
                           aria-describedby="inputGroup-sizing-sm"
                           defaultValue={
@@ -61,55 +63,35 @@ export default function ToolsName(props) {
                     <div className="col-2 col-lg-1 text-end">
                       <button
                         type="button"
-                        class="btn btn-sm btn-copy text-dm"
-                        data-bs-toggle="modal"
-                        data-bs-target="#Modal2"
-                        onClick={clipboard}
+                        className="btn btn-sm btn-copy text-dm"
+                        onClick={(clipboard, () => setShow(true))}
                       >
-                        <i class="fa-regular fa-clone text-light"></i>
+                        <i className="fa-regular fa-clone text-light"></i>
                       </button>
                     </div>
                   </div>
                 </div>
-                <div class="modal-footer border-0 pt-0">
+                <div className="modal-footer border-0 pt-0">
+                  <Toast
+                    onClose={() => setShow(false)}
+                    show={show}
+                    delay={8000}
+                    autohide
+                  >
+                    <button
+                      type="button"
+                      className="btn btn-share btn-sm btn-success"
+                      disabled
+                    >
+                      Copied!
+                    </button>
+                  </Toast>
                   <button
                     type="button"
-                    class="btn btn-share btn-sm"
+                    className="btn btn-share btn-sm"
                     data-bs-dismiss="modal"
                   >
                     Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="modal fade"
-            id="Modal2"
-            tabIndex="-1"
-            aria-labelledby="ModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-sm modal-dialog-scrollable my-5">
-              <div class="modal-content border-0">
-                <div
-                  class="modal-header rounded border-0 py-1"
-                  style={{ backgroundColor: "#BFACE2", color: "#5d3891" }}
-                >
-                  <h6 class="modal-title text-rubik" id="ModalLabel">
-                    Link copied!
-                  </h6>
-                  <button
-                    type="button"
-                    class="btn px-0"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                    style={{ boxShadow: "none" }}
-                  >
-                    <i
-                      class="fa-solid fa-xmark fa-lg"
-                      style={{ color: "#5d3891" }}
-                    ></i>
                   </button>
                 </div>
               </div>

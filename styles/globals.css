@@ -70,10 +70,17 @@ body {
 .card:hover {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15) !important;
   transform: scale(1.02);
-  transition: box-shadow, transform 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 .card {
-  transition: box-shadow, transform 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+}
+.toast {
+  width: auto;
+  border: 0;
+  box-shadow: none;
 }
 .sidebar {
   position: fixed;

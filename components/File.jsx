@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-export default function File0() {
+export default function FileCard() {
   return (
     <>
       <Card

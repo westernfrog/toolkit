@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-export default function Text0() {
+export default function TextCard() {
   return (
     <>
       <Card

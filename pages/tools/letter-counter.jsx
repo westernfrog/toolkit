@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import ToolsName from "@/components/ToolsName";
@@ -13,14 +14,14 @@ export default function LetterCounter() {
   return (
     <>
       <Header />
-      <div className="container-fluid">
+      <div className="container-fluid mb-5">
         <div className="row mx-0 px-md-5">
           <Sidebar lettercounter="active-category" />
           <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4">
             <ToolsName name="Letter counter" url="tools/letter-counter" />
-            <div class="form-floating my-3 text-dm">
+            <div className="form-floating my-3 text-dm">
               <textarea
-                class="form-control shadow-sm"
+                className="form-control shadow-sm"
                 placeholder="enter the text.."
                 id="floatingTextarea"
                 style={{
@@ -66,6 +67,7 @@ export default function LetterCounter() {
           </main>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

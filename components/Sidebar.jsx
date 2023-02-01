@@ -14,7 +14,7 @@ export default function Sidebar(props) {
               <div className="row g-0">
                 <div className="col-10 text-rubik">Text tools</div>
                 <div className="col-2 text-end px-0">
-                  <i class="fa-solid fa-link"></i>
+                  <i className="fa-solid fa-link"></i>
                 </div>
               </div>
             </Link>
@@ -56,7 +56,7 @@ export default function Sidebar(props) {
               <div className="row g-0">
                 <div className="col-10 text-rubik">Image tools</div>
                 <div className="col-2 text-end px-0">
-                  <i class="fa-solid fa-link"></i>
+                  <i className="fa-solid fa-link"></i>
                 </div>
               </div>
             </Link>
@@ -86,7 +86,7 @@ export default function Sidebar(props) {
               <div className="row g-0">
                 <div className="col-10 text-rubik">File tools</div>
                 <div className="col-2 text-end px-0">
-                  <i class="fa-solid fa-link"></i>
+                  <i className="fa-solid fa-link"></i>
                 </div>
               </div>
             </Link>

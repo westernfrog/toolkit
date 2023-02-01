@@ -5,25 +5,25 @@ export default function MoreTools(props) {
   return (
     <>
       <button
-        class="btn btn-sm btn-share text-dm p-2 d-lg-none"
+        className="btn btn-sm btn-share text-dm p-2 d-lg-none"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasExample"
         aria-controls="offcanvasExample"
       >
-        <i class="fa-solid fa-wrench me-2 fa-color"></i>
+        <i className="fa-solid fa-wrench me-2 fa-color"></i>
         More tools
       </button>
 
       <div
-        class="offcanvas offcanvas-start bg-light overflow-auto"
-        tabindex="-1"
+        className="offcanvas offcanvas-start bg-light overflow-auto"
+        tabIndex="-1"
         id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel"
       >
-        <div class="offcanvas-header border-bottom shadow-sm px-4">
+        <div className="offcanvas-header border-bottom shadow-sm px-4">
           <h6 id="offcanvas-title" className="mb-0 text-rubik">
-            <i class="fa-solid fa-infinity fa-xl fa-color me-2"></i>
+            <i className="fa-solid fa-infinity fa-xl fa-color me-2"></i>
             Playground
           </h6>
           <button
@@ -36,7 +36,7 @@ export default function MoreTools(props) {
             <i className="fa-solid fa-xmark fa-xl"></i>
           </button>
         </div>
-        <div class="offcanvas-body">
+        <div className="offcanvas-body">
           <nav className="d-md-block bg-light px-2">
             <div className="my-2">
               <h4 className="sidebar-heading text-dm fw-bold">
@@ -44,7 +44,7 @@ export default function MoreTools(props) {
                   <div className="row g-0">
                     <div className="col-10 text-rubik">Text tools</div>
                     <div className="col-2 text-end px-0">
-                      <i class="fa-solid fa-link"></i>
+                      <i className="fa-solid fa-link"></i>
                     </div>
                   </div>
                 </Link>
@@ -89,7 +89,7 @@ export default function MoreTools(props) {
                   <div className="row g-0">
                     <div className="col-10 text-rubik">Image tools</div>
                     <div className="col-2 text-end px-0">
-                      <i class="fa-solid fa-link"></i>
+                      <i className="fa-solid fa-link"></i>
                     </div>
                   </div>
                 </Link>
@@ -119,7 +119,7 @@ export default function MoreTools(props) {
                   <div className="row g-0">
                     <div className="col-10 text-rubik">File tools</div>
                     <div className="col-2 text-end px-0">
-                      <i class="fa-solid fa-link"></i>
+                      <i className="fa-solid fa-link"></i>
                     </div>
                   </div>
                 </Link>
