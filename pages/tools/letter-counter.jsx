@@ -41,7 +41,7 @@ export default function LetterCounter() {
                   style={{ borderRadius: "10px" }}
                 >
                   <h1>{text.split(".").length - 1}</h1>
-                  <p className="mb-0">line</p>
+                  <p className="mb-0 text-muted">line</p>
                 </div>
               </div>
               <div className="col-4">
@@ -50,7 +50,7 @@ export default function LetterCounter() {
                   style={{ borderRadius: "10px" }}
                 >
                   <h1>{text.split(" ").length - 1}</h1>
-                  <p className="mb-0">word</p>
+                  <p className="mb-0 text-muted">word</p>
                 </div>
               </div>
               <div className="col-4">
@@ -59,7 +59,7 @@ export default function LetterCounter() {
                   style={{ borderRadius: "10px" }}
                 >
                   <h1>{text.length}</h1>
-                  <p className="mb-0">letter</p>
+                  <p className="mb-0 text-muted">letter</p>
                 </div>
               </div>
             </div>

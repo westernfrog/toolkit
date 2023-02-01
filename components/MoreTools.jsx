@@ -11,7 +11,7 @@ export default function MoreTools(props) {
         data-bs-target="#offcanvasExample"
         aria-controls="offcanvasExample"
       >
-        <i class="fa-solid fa-wrench me-2 fa-lg"></i>
+        <i class="fa-solid fa-wrench me-2 fa-color"></i>
         More tools
       </button>
 

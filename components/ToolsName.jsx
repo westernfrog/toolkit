@@ -19,7 +19,7 @@ export default function ToolsName(props) {
             data-bs-toggle="modal"
             data-bs-target="#Modal"
           >
-            <i class="fa-solid fa-share-nodes me-2 fa-lg"></i>
+            <i class="fa-solid fa-share-nodes me-2 fa-color"></i>
             Share tools
           </button>
           <MoreTools />
@@ -90,7 +90,7 @@ export default function ToolsName(props) {
             aria-labelledby="ModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-sm modal-dialog-scrollable">
+            <div class="modal-dialog modal-sm modal-dialog-scrollable my-5">
               <div class="modal-content border-0">
                 <div
                   class="modal-header rounded border-0 py-1"
