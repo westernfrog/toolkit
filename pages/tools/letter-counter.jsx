@@ -14,7 +14,7 @@ export default function LetterCounter() {
   return (
     <>
       <Header />
-      <div className="container-fluid mb-5">
+      <div className="container-fluid mb-4">
         <div className="row mx-0 px-md-5">
           <Sidebar lettercounter="active-category" />
           <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4">

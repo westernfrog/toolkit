@@ -32,7 +32,7 @@ body {
 .btn-shrink {
   transition: transform 100ms ease-in-out;
 }
-.toolsCat:hover {
+.tools-nav:hover {
   background-color: #c9ccd5;
 }
 #active-category {

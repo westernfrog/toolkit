@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-export default function ToolsCat(props) {
+export default function ToolsCatLg(props) {
   return (
     <>
       <li className="nav-item">
         <Link
-          className="nav-link toolsCat mx-0 rounded"
+          className="nav-link tools-nav mx-0 rounded-start"
           href={props.url}
           id={props.active}
         >

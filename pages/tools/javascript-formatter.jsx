@@ -21,7 +21,7 @@ export default function JSFormat(params) {
   return (
     <>
       <Header />
-      <div className="container-fluid mb-5">
+      <div className="container-fluid">
         <div className="row mx-0 px-md-5">
           <Sidebar javascriptformatter="active-category" />
           <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4">
@@ -81,7 +81,7 @@ export default function JSFormat(params) {
                 </div>
               </div>
 
-              <div className="col-md-6 my-3 my-lg-0">
+              <div className="col-md-6 mt-3 mt-lg-0">
                 <div className="border-0" style={{ borderRadius: "10px" }}>
                   <div className="form-floating text-dm">
                     <textarea
