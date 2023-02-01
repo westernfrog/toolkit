@@ -41,7 +41,7 @@ export default function LetterCounter() {
                   className="me-2 me-lg-3 border py-3 py-lg-5 shadow-sm bg-white"
                   style={{ borderRadius: "10px" }}
                 >
-                  <h1>{text.split(".").length - 1}</h1>
+                  <h1 className="fa-color">{text.split(".").length - 1}</h1>
                   <p className="mb-0 text-muted">line</p>
                 </div>
               </div>
@@ -50,7 +50,7 @@ export default function LetterCounter() {
                   className="mx-1 mx-lg-3 border py-3 py-lg-5 shadow-sm bg-white"
                   style={{ borderRadius: "10px" }}
                 >
-                  <h1>{text.split(" ").length - 1}</h1>
+                  <h1 className="fa-color">{text.split(" ").length - 1}</h1>
                   <p className="mb-0 text-muted">word</p>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function LetterCounter() {
                   className="ms-2 ms-lg-3 border py-3 py-lg-5 shadow-sm bg-white"
                   style={{ borderRadius: "10px" }}
                 >
-                  <h1>{text.length}</h1>
+                  <h1 className="fa-color">{text.length}</h1>
                   <p className="mb-0 text-muted">letter</p>
                 </div>
               </div>

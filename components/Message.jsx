@@ -22,8 +22,6 @@ export default function Message() {
       },
       body: JSON.stringify(formData),
     });
-    const data = await res.json();
-    console.log(data);
   };
 
   useEffect(() => {

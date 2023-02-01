@@ -26,7 +26,7 @@ export default function ToolsName(props) {
           </button>
           <MoreTools />
           <div
-            className="modal fade"
+            className="modal fade px-0"
             id="Modal"
             tabIndex="-1"
             aria-labelledby="ModalLabel"
@@ -44,9 +44,9 @@ export default function ToolsName(props) {
                     Share this link among your family and friends to make their
                     work easier!
                   </p>
-                  <div className="row g-0">
+                  <div className="row g-0 mb-3">
                     <div className="col-10 col-lg-11">
-                      <div className="input-group input-group-sm mb-3">
+                      <div className="input-group input-group-sm">
                         <input
                           id="clipboard"
                           type="text"
@@ -64,7 +64,10 @@ export default function ToolsName(props) {
                       <button
                         type="button"
                         className="btn btn-sm btn-copy btn-shrink text-dm"
-                        onClick={(clipboard, () => setShow(true))}
+                        onClick={() => {
+                          clipboard();
+                          setShow(true);
+                        }}
                       >
                         <i className="fa-regular fa-clone text-light"></i>
                       </button>

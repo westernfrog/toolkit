@@ -143,6 +143,7 @@ export default function Header() {
                     data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight"
+                    style={{ boxShadow: "none" }}
                   >
                     Send a message
                   </button>

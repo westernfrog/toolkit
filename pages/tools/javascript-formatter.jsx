@@ -6,23 +6,32 @@ import { useState } from "react";
 import Toast from "react-bootstrap/Toast";
 import JSONPretty from "react-json-pretty";
 import "react-json-pretty/themes/monikai.css";
+import $ from "jquery";
 
 export default function JSFormat() {
   const [text, setText] = useState("");
+  const [newText, setNewText] = useState("");
   const [show, setShow] = useState(false);
 
   const handleOnChange = (event) => {
-    let newText = event.target.value;
-
-    setText(newText);
+    let newData = event.target.value;
+    setText(newData);
   };
 
-  function clipboard() {
-    let text = document.getElementById("clipboard");
-    text.select();
-    text.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(text.value);
-  }
+  const handleOnClick = () => {
+    setNewText(text);
+  };
+
+  const handleReset = () => {
+    setText("");
+    setNewText("");
+  };
+
+  const clipboard = () => {
+    let newData = $(".input").html();
+    let data = JSON.stringify(newData);
+  };
+
   return (
     <>
       <Header />
@@ -37,26 +46,17 @@ export default function JSFormat() {
             <div className="row text-center text-rubik my-3">
               <div className="col-md-4">
                 <div className="border-0" style={{ borderRadius: "10px" }}>
-                  <div className="form-floating text-dm">
-                    <textarea
-                      className="form-control shadow-sm fs-7"
-                      placeholder="enter the text.."
-                      id="floatingTextarea"
-                      style={{
-                        height: "400px",
-                        borderRadius: "10px",
-                        resize: "none",
-                      }}
-                      onChange={handleOnChange}
-                    ></textarea>
-                    <label
-                      htmlFor="floatingTextarea"
-                      className="text-muted text-chivo"
-                      style={{ fontSize: "14px" }}
-                    >
-                      Input
-                    </label>
-                  </div>
+                  <textarea
+                    className="form-control shadow-sm fs-7 input"
+                    placeholder="Input"
+                    style={{
+                      height: "400px",
+                      borderRadius: "10px",
+                      resize: "none",
+                    }}
+                    value={text}
+                    onChange={handleOnChange}
+                  ></textarea>
                 </div>
 
                 <div className="row">
@@ -68,6 +68,7 @@ export default function JSFormat() {
                         borderRadius: "10px",
                         fontSize: "14px",
                       }}
+                      onClick={handleOnClick}
                     >
                       Format
                       <i className="fa-solid fa-arrow-right fa-color fa-lg ms-2"></i>
@@ -76,8 +77,9 @@ export default function JSFormat() {
                   <div className="col-6 d-grid">
                     <button
                       type="button"
-                      className="btn btn-sm btn-share border text-dm my-3 rounded text-uppercase text-dark text-dm fw-bold fs-7 py-2 btn-shrink"
+                      className="btn btn-sm btn-share border text-dm my-3 text-uppercase text-dark text-dm fw-bold fs-7 py-2 btn-shrink"
                       style={{ borderRadius: "10px" }}
+                      onClick={handleReset}
                     >
                       <i className="fa-solid fa-recycle fa-color me-2 fa-lg"></i>
                       Reset
@@ -89,26 +91,17 @@ export default function JSFormat() {
               <div className="col-md-8 mt-3 mt-lg-0">
                 <div className="border-0" style={{ borderRadius: "10px" }}>
                   <div
-                    className="text-dm border border-2 rounded shadow-sm text-start p-3 overflow-auto bg-dark"
+                    className="text-dm rounded shadow-sm text-start p-3 overflow-auto bg-dark output"
                     style={{ height: "400px" }}
                   >
                     <JSONPretty
                       id="json-pretty"
-                      data={text}
-                      replacer={function (key, value) {
-                        if (key === "cccc") {
-                          value += "~~~abc";
-                        }
-                        if (key === "gggg") {
-                          value *= 10;
-                        }
-                        return value;
-                      }}
+                      data={newText}
                       space="4"
                       theme={{
-                        main: "line-height:1.3;color:#9FC9F3;overflow:auto;",
+                        main: "line-height:1.3;color:#9FC9F3;background-color:inherit;overflow:auto;",
                         error:
-                          "line-height:1.3;color:#66d9ef;background:#272822;overflow:auto;",
+                          "line-height:1.3;color:#D2001A;background-color:#272822;border-radius:6px;overflow:auto;",
                         key: "color:#A460ED;",
                         string: "color:#FD841F;",
                         value: "color:#ADDDD0;",
@@ -121,7 +114,10 @@ export default function JSFormat() {
                       <button
                         type="button"
                         className="btn btn-sm btn-share btn-shrink border text-dm me-2 my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
-                        onClick={(clipboard, () => setShow(true))}
+                        onClick={() => {
+                          clipboard();
+                          setShow(true);
+                        }}
                       >
                         COPY TO CLIPBOARD
                         <i className="fa-solid fa-copy fa-color ms-2"></i>
