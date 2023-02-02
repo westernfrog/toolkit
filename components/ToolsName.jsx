@@ -17,7 +17,7 @@ export default function ToolsName(props) {
         <div className="btn-toolbar my-2 mb-md-0">
           <button
             type="button"
-            className="btn btn-sm btn-share btn-shrink text-dm p-2 me-2"
+            className="btn btn-sm btn-share btn-shrink text-dm p-2"
             data-bs-toggle="modal"
             data-bs-target="#Modal"
           >
@@ -33,7 +33,7 @@ export default function ToolsName(props) {
             aria-hidden="true"
           >
             <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div className="modal-content text-rubik bg-light border-0">
+              <div className="modal-content text-rubik bg-light border-0 rounded">
                 <div className="modal-header border-0">
                   <h5 className="modal-title" id="ModalLabel">
                     Share tools

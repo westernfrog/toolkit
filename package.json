@@ -15,7 +15,7 @@
     "jquery": "^3.6.3",
     "mongoose": "^6.9.0",
     "next": "13.1.6",
-    "react": "18.2.0",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0",
     "react-json-pretty": "^2.2.0"

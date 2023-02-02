@@ -132,7 +132,7 @@ export default function JSFormat() {
                       >
                         <button
                           type="button"
-                          className="btn btn-share btn-sm btn-success rounded fw-bold fs-7 py-2 my-3"
+                          className="btn btn-share btn-sm btn-success rounded fw-bold fs-7 py-2 my-3 text-dm"
                           disabled
                         >
                           <i className="fa-solid fa-check text-light"></i>
