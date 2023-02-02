@@ -51,7 +51,7 @@ export default function Header() {
                   Categories
                 </Link>
                 <ul
-                  className="dropdown-menu text-dm border"
+                  className="dropdown-menu text-dm border-0 shadow-sm rounded"
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
                   <Dropdown
@@ -96,7 +96,7 @@ export default function Header() {
                   Contact
                 </Link>
                 <ul
-                  className="dropdown-menu text-dm border"
+                  className="dropdown-menu text-dm border-0 shadow-sm rounded"
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
                   <Dropdown
@@ -134,7 +134,6 @@ export default function Header() {
                   Support
                 </Link>
               </li>
-
               <li className="nav-item">
                 <div className="nav-link">
                   <button
