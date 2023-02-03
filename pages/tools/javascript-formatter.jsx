@@ -19,6 +19,11 @@ export default function JSFormat() {
     setText(newData);
   };
 
+  const handleSampleText = () => {
+    let json = `{"describeMe":"sexy"}`;
+    setText(json);
+  };
+
   const handleOnClick = () => {
     setNewText(text);
   };
@@ -39,12 +44,52 @@ export default function JSFormat() {
       <div className="container-fluid">
         <div className="row mx-0 px-md-5">
           <Sidebar javascriptformatter="active-category" />
-          <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4">
+          <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4 text-dm">
             <ToolsName
               name="Javascript formatter"
               url="tools/javascript-formatter"
             />
-            <div className="row text-center text-rubik my-3">
+            <div className="d-flex justify-content-between align-items-center mt-3">
+              <div
+                className="btn-group rounded"
+                role="group"
+                aria-label="Basic example"
+              >
+                <Buttons name="Sample" func={handleSampleText} class="btn-sm" />
+                <Buttons
+                  func={handleReset}
+                  icon="fa-trash-can text-danger"
+                  class="mx-2 btn-sm"
+                />
+                <Buttons
+                  func={() => {
+                    clipboard();
+                    setShow(true);
+                  }}
+                  icon="fa-copy fw-light text-success"
+                  class="btn-sm"
+                />
+              </div>
+              <div
+                className="btn-group rounded ms-auto"
+                role="group"
+                aria-label="Basic example"
+              >
+                <Toast
+                  onClose={() => setShow(false)}
+                  show={show}
+                  delay={5000}
+                  autohide
+                >
+                  <Buttons
+                    name="Copied!"
+                    icon="fa-circle-check fa-sm me-2 text-light"
+                    class="btn-sm fs-7 btn-success disabled"
+                  />
+                </Toast>
+              </div>
+            </div>
+            <div className="row text-center text-rubik my-1">
               <div className="col-md-4">
                 <div className="border-0" style={{ borderRadius: "10px" }}>
                   <textarea
@@ -108,34 +153,6 @@ export default function JSFormat() {
                         boolean: "color:#10A19D;",
                       }}
                     ></JSONPretty>
-                  </div>
-                  <div className="row g-0">
-                    <div className="col-10 d-grid">
-                      <button
-                        type="button"
-                        className="btn btn-sm btn-share btn-shrink border text-dm me-2 my-3 rounded text-dark text-dm fw-bold fs-7 py-2"
-                        onClick={() => {
-                          clipboard();
-                          setShow(true);
-                        }}
-                      >
-                        COPY TO CLIPBOARD
-                        <i className="fa-solid fa-copy fa-color ms-2"></i>
-                      </button>
-                    </div>
-                    <div className="col-2">
-                      <Toast
-                        onClose={() => setShow(false)}
-                        show={show}
-                        delay={5000}
-                        autohide
-                      >
-                        <Buttons
-                          icon="fa-circle-check text-light"
-                          class="btn-sm fs-7 btn-success disabled py-2 my-3"
-                        />
-                      </Toast>
-                    </div>
                   </div>
                 </div>
               </div>

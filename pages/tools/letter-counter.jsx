@@ -1,14 +1,27 @@
+import Buttons from "@/components/Buttons";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import ToolsName from "@/components/ToolsName";
 import { useState } from "react";
+import { Toast } from "react-bootstrap";
 
 export default function LetterCounter() {
-  const [text, setText] = useState("");
+  const [show, setShow] = useState(false);
+  const [text, setText] = useState(" ");
 
   const handleOnChange = (event) => {
     setText(event.target.value);
+  };
+  const handleSampleText = () => {
+    setText("Hi, How are you!");
+  };
+  const handleReset = () => {
+    setText("");
+  };
+  const clipboard = () => {
+    let copyText = document.getElementById("copy-to-clipboard");
+    navigator.clipboard.writeText(copyText.value);
   };
 
   return (
@@ -17,16 +30,58 @@ export default function LetterCounter() {
       <div className="container-fluid mb-4">
         <div className="row mx-0 px-md-5">
           <Sidebar lettercounter="active-category" />
-          <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4">
+          <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4 text-dm">
             <ToolsName name="Letter counter" url="tools/letter-counter" />
-            <div className="form-floating my-3 text-dm">
+            <div className="d-flex justify-content-between align-items-center mt-3">
+              <div
+                className="btn-group rounded"
+                role="group"
+                aria-label="Basic example"
+              >
+                <Buttons name="Sample" func={handleSampleText} class="btn-sm" />
+                <Buttons
+                  func={handleReset}
+                  icon="fa-trash-can text-danger"
+                  class="mx-2 btn-sm"
+                />
+                <Buttons
+                  func={() => {
+                    clipboard();
+                    setShow(true);
+                  }}
+                  icon="fa-copy fw-light text-success"
+                  class="btn-sm"
+                />
+              </div>
+              <div
+                className="btn-group rounded ms-auto"
+                role="group"
+                aria-label="Basic example"
+              >
+                <Toast
+                  onClose={() => setShow(false)}
+                  show={show}
+                  delay={5000}
+                  autohide
+                >
+                  <Buttons
+                    name="Copied!"
+                    icon="fa-circle-check fa-sm me-2 text-light"
+                    class="btn-sm fs-7 btn-success disabled"
+                  />
+                </Toast>
+              </div>
+            </div>
+            <div className="form-floating my-1 text-dm">
               <textarea
+                id="copy-to-clipboard"
                 className="form-control shadow-sm"
                 style={{
                   height: "46vh",
                   borderRadius: "10px",
                   resize: "none",
                 }}
+                value={text}
                 onChange={handleOnChange}
               ></textarea>
               <label htmlFor="floatingTextarea" className="text-muted">
