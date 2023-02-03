@@ -5,6 +5,7 @@ import Toast from "react-bootstrap/Toast";
 import { useState } from "react";
 import $ from "jquery";
 import Buttons from "@/components/Buttons";
+import Footer from "@/components/Footer";
 
 export default function CaseConverter() {
   const [show, setShow] = useState(false);
@@ -37,16 +38,31 @@ export default function CaseConverter() {
     $(".text-format").toggleClass("text-decoration-line-through");
   };
   const handleAlignRight = () => {
+    $(".text-format").removeClass("text-end text-center");
     $(".text-format").toggleClass("text-start");
   };
   const handleAlignLeft = () => {
+    $(".text-format").removeClass("text-start text-center");
     $(".text-format").toggleClass("text-end");
   };
   const handleAlignCenter = () => {
+    $(".text-format").removeClass("text-end text-start");
     $(".text-format").toggleClass("text-center");
   };
   const handleCode = () => {
     $(".text-format").toggleClass("font-monospace");
+  };
+  const handleUpper = () => {
+    $(".text-format").removeClass("text-lowercase text-capitalize");
+    $(".text-format").toggleClass("text-uppercase");
+  };
+  const handleLower = () => {
+    $(".text-format").removeClass("text-uppercase text-capitalize");
+    $(".text-format").toggleClass("text-lowercase");
+  };
+  const handleSentence = () => {
+    $(".text-format").removeClass("text-uppercase text-lowercase");
+    $(".text-format").toggleClass("text-capitalize");
   };
 
   return (
@@ -57,6 +73,12 @@ export default function CaseConverter() {
           <Sidebar caseconverter="active-category" />
           <main className="col-md-11 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4 text-dm">
             <ToolsName name="Case converter" url="tools/case-converter" />
+            <p className="text-dm col-lg-10 fs-7">
+              A free online tool for converting text to different cases. If you
+              have a wrongly formatted text you want to convert it to a
+              <mark> specific case or format a piece of text</mark>, online case
+              converter will assist you to perform it immediately.
+            </p>
             <div className="d-flex justify-content-between align-items-center">
               <div
                 class="btn-group mt-3 mb-2 rounded"
@@ -155,24 +177,24 @@ export default function CaseConverter() {
               <div className="col-6 col-lg-3 d-grid my-1">
                 <Buttons
                   name="Uppercase"
-                  func={handleAlignCenter}
-                  icon="fa-plus me-2"
+                  func={handleUpper}
+                  icon="fa-plus me-2 fa-color"
                   class="fs-7"
                 />
               </div>
               <div className="col-6 col-lg-3 d-grid my-1">
                 <Buttons
                   name="Lowercase"
-                  func={handleAlignCenter}
-                  icon="fa-minus me-2"
+                  func={handleLower}
+                  icon="fa-minus me-2 fa-color"
                   class="fs-7"
                 />
               </div>
               <div className="col-6 col-lg-3 d-grid my-1">
                 <Buttons
                   name="Sentence case"
-                  func={handleAlignCenter}
-                  icon="fa-pen me-2"
+                  func={handleSentence}
+                  icon="fa-pen me-2 fa-color"
                   class="fs-7"
                 />
               </div>
@@ -180,21 +202,15 @@ export default function CaseConverter() {
                 <Buttons
                   name="Title case"
                   func={handleAlignCenter}
-                  icon="fa-t me-2"
+                  icon="fa-t me-2 fa-color"
                   class="fs-7"
                 />
               </div>
             </div>
-
-            <p className="text-dm col-lg-10 fs-7">
-              A free online tool for converting text to different cases. If you
-              have a wrongly formatted text you want to convert it to a specific
-              case, online case converter will assist you to perform it
-              immediately.
-            </p>
           </main>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
