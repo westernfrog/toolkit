@@ -105,13 +105,13 @@ export default function CaseConverter() {
                 type="button"
                 class="btn btn-sm btn-share btn-shrink rounded"
               >
-                <i class="fa-solid fa-sm fa-strikethrough"></i>
+                <i class="fa-solid fa-sm fa-underline"></i>
               </button>
               <button
                 type="button"
                 class="btn btn-sm btn-share btn-shrink rounded mx-2"
               >
-                <i class="fa-solid fa-sm fa-underline"></i>
+                <i class="fa-solid fa-sm fa-strikethrough"></i>
               </button>
               <button
                 type="button"
@@ -129,13 +129,13 @@ export default function CaseConverter() {
                 type="button"
                 class="btn btn-sm btn-share btn-shrink rounded"
               >
-                <i class="fa-solid fa-sm fa-align-justify"></i>
+                <i class="fa-solid fa-sm fa-align-center"></i>
               </button>
               <button
                 type="button"
                 class="btn btn-sm btn-share btn-shrink rounded ms-2"
               >
-                <i class="fa-solid fa-sm fa-align-center"></i>
+                <i class="fa-solid fa-sm fa-align-justify"></i>
               </button>
             </div>
             <div className="form-floating text-dm">
