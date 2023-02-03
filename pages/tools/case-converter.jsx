@@ -3,6 +3,8 @@ import Sidebar from "@/components/Sidebar";
 import ToolsName from "@/components/ToolsName";
 import Toast from "react-bootstrap/Toast";
 import { useState } from "react";
+import $ from "jquery";
+import Buttons from "@/components/Buttons";
 
 export default function CaseConverter() {
   const [show, setShow] = useState(false);
@@ -22,13 +24,38 @@ export default function CaseConverter() {
     let copyText = document.getElementById("copy-to-clipboard");
     navigator.clipboard.writeText(copyText.value);
   };
+  const handleBold = () => {
+    $(".text-format").toggleClass("fw-bold");
+  };
+  const handleItalics = () => {
+    $(".text-format").toggleClass("fst-italic");
+  };
+  const handleUnderline = () => {
+    $(".text-format").toggleClass("text-decoration-underline");
+  };
+  const handleStrike = () => {
+    $(".text-format").toggleClass("text-decoration-line-through");
+  };
+  const handleAlignRight = () => {
+    $(".text-format").toggleClass("text-start");
+  };
+  const handleAlignLeft = () => {
+    $(".text-format").toggleClass("text-end");
+  };
+  const handleAlignCenter = () => {
+    $(".text-format").toggleClass("text-center");
+  };
+  const handleCode = () => {
+    $(".text-format").toggleClass("font-monospace");
+  };
+
   return (
     <>
       <Header />
       <div className="container-fluid">
         <div className="row mx-0 px-md-5">
           <Sidebar caseconverter="active-category" />
-          <main className="col-md-11 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4">
+          <main className="col-md-11 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4 text-dm">
             <ToolsName name="Case converter" url="tools/case-converter" />
             <div className="d-flex justify-content-between align-items-center">
               <div
@@ -36,30 +63,20 @@ export default function CaseConverter() {
                 role="group"
                 aria-label="Basic example"
               >
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink fst-italics rounded text-dm"
-                  onClick={handleSampleText}
-                >
-                  Sample
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink rounded mx-2"
-                  onClick={handleReset}
-                >
-                  <i class="fa-solid fa-trash-can text-danger"></i>
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink rounded"
-                  onClick={() => {
+                <Buttons name="Sample" func={handleSampleText} class="btn-sm" />
+                <Buttons
+                  func={handleReset}
+                  icon="fa-trash-can text-danger"
+                  class="mx-2 btn-sm"
+                />
+                <Buttons
+                  func={() => {
                     clipboard();
                     setShow(true);
                   }}
-                >
-                  <i class="fa-regular fa-copy text-success"></i>
-                </button>
+                  icon="fa-copy fw-light text-success"
+                  class="btn-sm"
+                />
               </div>
               <div
                 class="btn-group mt-3 mb-1 rounded ms-auto"
@@ -72,78 +89,58 @@ export default function CaseConverter() {
                   delay={5000}
                   autohide
                 >
-                  <button
-                    type="button"
-                    className="btn btn-share btn-sm btn-success rounded fs-7 text-dm"
-                    disabled
-                  >
-                    <i className="fa-solid fa-circle-check fa-sm text-light me-2"></i>
-                    Copied!
-                  </button>
+                  <Buttons
+                    name="Copied!"
+                    icon="fa-circle-check fa-sm me-2 text-light"
+                    class="btn-sm fs-7 btn-success disabled"
+                  />
                 </Toast>
               </div>
             </div>
-
             <div
               class="btn-group mb-1 rounded d-flex justify-content-between align-items-center"
               role="group"
               aria-label="Basic example"
             >
-              <button
-                type="button"
-                class="btn btn-sm btn-share btn-shrink rounded"
-              >
-                <i class="fa-solid fa-sm fa-bold"></i>
-              </button>
-              <button
-                type="button"
-                class="btn btn-sm btn-share btn-shrink rounded mx-2"
-              >
-                <i class="fa-solid fa-sm fa-italic"></i>
-              </button>
-              <button
-                type="button"
-                class="btn btn-sm btn-share btn-shrink rounded"
-              >
-                <i class="fa-solid fa-sm fa-underline"></i>
-              </button>
-              <button
-                type="button"
-                class="btn btn-sm btn-share btn-shrink rounded mx-2"
-              >
-                <i class="fa-solid fa-sm fa-strikethrough"></i>
-              </button>
-              <button
-                type="button"
-                class="btn btn-sm btn-share btn-shrink rounded"
-              >
-                <i class="fa-solid fa-sm fa-align-right"></i>
-              </button>
-              <button
-                type="button"
-                class="btn btn-sm btn-share btn-shrink rounded mx-2"
-              >
-                <i class="fa-solid fa-sm fa-align-left"></i>
-              </button>
-              <button
-                type="button"
-                class="btn btn-sm btn-share btn-shrink rounded"
-              >
-                <i class="fa-solid fa-sm fa-align-center"></i>
-              </button>
-              <button
-                type="button"
-                class="btn btn-sm btn-share btn-shrink rounded ms-2"
-              >
-                <i class="fa-solid fa-sm fa-align-justify"></i>
-              </button>
+              <Buttons func={handleBold} icon="fa-bold" class="btn-sm" />
+              <Buttons
+                func={handleItalics}
+                icon="fa-italic"
+                class="mx-2 btn-sm"
+              />
+              <Buttons
+                func={handleUnderline}
+                icon="fa-underline"
+                class="btn-sm"
+              />
+              <Buttons
+                func={handleStrike}
+                icon="fa-strikethrough"
+                class="btn-sm mx-2"
+              />
+              <Buttons func={handleCode} icon="fa-code" class="btn-sm" />
+              <Buttons
+                func={handleAlignRight}
+                icon="fa-align-right"
+                class="btn-sm mx-2"
+              />
+              <Buttons
+                func={handleAlignLeft}
+                icon="fa-align-left"
+                class="btn-sm"
+              />
+              <Buttons
+                func={handleAlignCenter}
+                icon="fa-align-center"
+                class="btn-sm ms-2"
+              />
             </div>
             <div className="form-floating text-dm">
               <textarea
-                className="form-control shadow-sm"
+                className="form-control shadow-sm text-format"
                 id="copy-to-clipboard"
                 style={{
-                  height: "300px",
+                  height: "40vh",
                   borderRadius: "10px",
                   resize: "none",
                 }}
@@ -154,62 +151,38 @@ export default function CaseConverter() {
                 the text goes here..
               </label>
             </div>
-            <div className="row g-0">
-              <div className="col-lg-12 col-4 d-grid my-3">
-                <button
-                  type="button"
-                  className="btn btn-sm btn-share border text-dm rounded text-uppercase text-dark text-dm fw-bold btn-shrink"
-                  style={{
-                    borderRadius: "10px",
-                  }}
-                >
-                  <i className="fa-solid fa-arrow-right fa-color fa-lg ms-2"></i>
-                  Uppercase
-                </button>
+            <div className="row my-2 text-dm">
+              <div className="col-6 col-lg-3 d-grid my-1">
+                <Buttons
+                  name="Uppercase"
+                  func={handleAlignCenter}
+                  icon="fa-plus me-2"
+                  class="fs-7"
+                />
               </div>
-              <div className="col-lg-12 col-4 d-grid my-3">
-                <button
-                  type="button"
-                  className="btn btn-sm btn-share border text-dm text-uppercase text-dark text-dm fw-bold btn-shrink"
-                  style={{ borderRadius: "10px", fontSize: "12px" }}
-                >
-                  <i className="fa-solid fa-recycle fa-color me-0 me-lg-2 fa-lg"></i>
-                  Uppercase
-                </button>
+              <div className="col-6 col-lg-3 d-grid my-1">
+                <Buttons
+                  name="Lowercase"
+                  func={handleAlignCenter}
+                  icon="fa-minus me-2"
+                  class="fs-7"
+                />
               </div>
-              <div className="col-lg-12 col-4 d-grid my-3">
-                <button
-                  type="button"
-                  className="btn btn-sm btn-share border text-dm rounded text-uppercase text-dark text-dm fw-bold btn-shrink"
-                  style={{
-                    borderRadius: "10px",
-                  }}
-                >
-                  <i className="fa-solid fa-arrow-right fa-color fa-lg ms-2"></i>
-                  Uppercase
-                </button>
+              <div className="col-6 col-lg-3 d-grid my-1">
+                <Buttons
+                  name="Sentence case"
+                  func={handleAlignCenter}
+                  icon="fa-pen me-2"
+                  class="fs-7"
+                />
               </div>
-              <div className="col-lg-12 col-4 d-grid my-3">
-                <button
-                  type="button"
-                  className="btn btn-sm btn-share border text-dm rounded text-uppercase text-dark text-dm fw-bold btn-shrink"
-                  style={{
-                    borderRadius: "10px",
-                  }}
-                >
-                  <i className="fa-solid fa-arrow-right fa-color fa-lg ms-2"></i>
-                  Uppercase
-                </button>
-              </div>
-              <div className="col-lg-12 col-4 d-grid my-3">
-                <button
-                  type="button"
-                  className="btn btn-sm btn-share border text-dm text-uppercase text-dark text-dm fw-bold btn-shrink"
-                  style={{ borderRadius: "10px" }}
-                >
-                  <i className="fa-solid fa-recycle fa-color me-0 me-lg-2 fa-lg"></i>
-                  Uppercase
-                </button>
+              <div className="col-6 col-lg-3 d-grid my-1">
+                <Buttons
+                  name="Title case"
+                  func={handleAlignCenter}
+                  icon="fa-t me-2"
+                  class="fs-7"
+                />
               </div>
             </div>
 

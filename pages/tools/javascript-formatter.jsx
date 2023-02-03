@@ -7,6 +7,7 @@ import Toast from "react-bootstrap/Toast";
 import JSONPretty from "react-json-pretty";
 import "react-json-pretty/themes/monikai.css";
 import $ from "jquery";
+import Buttons from "@/components/Buttons";
 
 export default function JSFormat() {
   const [text, setText] = useState("");
@@ -87,7 +88,6 @@ export default function JSFormat() {
                   </div>
                 </div>
               </div>
-
               <div className="col-md-8 mt-3 mt-lg-0">
                 <div className="border-0" style={{ borderRadius: "10px" }}>
                   <div
@@ -130,13 +130,10 @@ export default function JSFormat() {
                         delay={5000}
                         autohide
                       >
-                        <button
-                          type="button"
-                          className="btn btn-share btn-sm btn-success rounded fw-bold fs-7 py-2 my-3 text-dm"
-                          disabled
-                        >
-                          <i className="fa-solid fa-circle-check text-light"></i>
-                        </button>
+                        <Buttons
+                          icon="fa-circle-check text-light"
+                          class="btn-sm fs-7 btn-success disabled py-2 my-3"
+                        />
                       </Toast>
                     </div>
                   </div>

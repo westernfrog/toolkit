@@ -22,10 +22,8 @@ export default function LetterCounter() {
             <div className="form-floating my-3 text-dm">
               <textarea
                 className="form-control shadow-sm"
-                placeholder="enter the text.."
-                id="floatingTextarea"
                 style={{
-                  height: "300px",
+                  height: "46vh",
                   borderRadius: "10px",
                   resize: "none",
                 }}
