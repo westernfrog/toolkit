@@ -201,7 +201,7 @@ export default function CaseConverter() {
               <div className="col-6 col-lg-3 d-grid my-1">
                 <Buttons
                   name="Title case"
-                  func={handleAlignCenter}
+                  func={handleSentence}
                   icon="fa-t me-2 fa-color"
                   class="fs-7"
                 />
