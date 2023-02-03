@@ -135,7 +135,7 @@ export default function JSFormat() {
                           className="btn btn-share btn-sm btn-success rounded fw-bold fs-7 py-2 my-3 text-dm"
                           disabled
                         >
-                          <i className="fa-solid fa-check text-light"></i>
+                          <i className="fa-solid fa-circle-check text-light"></i>
                         </button>
                       </Toast>
                     </div>

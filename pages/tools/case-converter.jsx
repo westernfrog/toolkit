@@ -6,6 +6,22 @@ import { useState } from "react";
 
 export default function CaseConverter() {
   const [show, setShow] = useState(false);
+  const [text, setText] = useState(" ");
+
+  const handleOnChange = (event) => {
+    setText(event.target.value);
+    console.log(event.target.value);
+  };
+  const handleSampleText = () => {
+    setText("Hi, How are you!");
+  };
+  const handleReset = () => {
+    setText("");
+  };
+  const clipboard = () => {
+    let copyText = document.getElementById("copy-to-clipboard");
+    navigator.clipboard.writeText(copyText.value);
+  };
   return (
     <>
       <Header />
@@ -23,19 +39,24 @@ export default function CaseConverter() {
                 <button
                   type="button"
                   class="btn btn-sm btn-share btn-shrink fst-italics rounded text-dm"
+                  onClick={handleSampleText}
                 >
                   Sample
                 </button>
                 <button
                   type="button"
                   class="btn btn-sm btn-share btn-shrink rounded mx-2"
+                  onClick={handleReset}
                 >
                   <i class="fa-solid fa-trash-can text-danger"></i>
                 </button>
                 <button
                   type="button"
                   class="btn btn-sm btn-share btn-shrink rounded"
-                  onClick={() => setShow(true)}
+                  onClick={() => {
+                    clipboard();
+                    setShow(true);
+                  }}
                 >
                   <i class="fa-regular fa-copy text-success"></i>
                 </button>
@@ -56,7 +77,7 @@ export default function CaseConverter() {
                     className="btn btn-share btn-sm btn-success rounded fs-7 text-dm"
                     disabled
                   >
-                    <i className="fa-solid fa-check fa-sm text-light me-2"></i>
+                    <i className="fa-solid fa-circle-check fa-sm text-light me-2"></i>
                     Copied!
                   </button>
                 </Toast>
@@ -65,12 +86,14 @@ export default function CaseConverter() {
             <div className="form-floating text-dm">
               <textarea
                 className="form-control shadow-sm"
-                id="floatingTextarea"
+                id="copy-to-clipboard"
                 style={{
                   height: "300px",
                   borderRadius: "10px",
                   resize: "none",
                 }}
+                value={text}
+                onChange={handleOnChange}
               ></textarea>
               <label htmlFor="floatingTextarea" className="text-muted">
                 the text goes here..

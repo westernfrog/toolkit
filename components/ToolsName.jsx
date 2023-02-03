@@ -86,6 +86,7 @@ export default function ToolsName(props) {
                       className="btn btn-share btn-sm btn-success"
                       disabled
                     >
+                      <i className="fa-solid fa-circle-check fa-sm text-light me-2"></i>
                       Copied!
                     </button>
                   </Toast>
