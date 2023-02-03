@@ -85,7 +85,7 @@ export default function CaseConverter() {
             </p>
             <div className="d-flex justify-content-between align-items-center">
               <div
-                class="btn-group mt-3 mb-2 rounded"
+                className="btn-group my-2 rounded"
                 role="group"
                 aria-label="Basic example"
               >
@@ -105,7 +105,7 @@ export default function CaseConverter() {
                 />
               </div>
               <div
-                class="btn-group mt-3 mb-1 rounded ms-auto"
+                className="btn-group mt-3 mb-1 rounded ms-auto"
                 role="group"
                 aria-label="Basic example"
               >
@@ -124,7 +124,7 @@ export default function CaseConverter() {
               </div>
             </div>
             <div
-              class="btn-group mb-1 rounded d-flex justify-content-between align-items-center"
+              className="btn-group mb-1 rounded d-flex justify-content-between align-items-center"
               role="group"
               aria-label="Basic example"
             >
