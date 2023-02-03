@@ -83,7 +83,7 @@ export default function CaseConverter() {
                 </Toast>
               </div>
             </div>
-            <div className="d-flex justify-content-evenly align-items-center">
+            <div className="d-flex justify-content-between align-items-center">
               <div
                 class="btn-group mb-1 rounded"
                 role="group"
