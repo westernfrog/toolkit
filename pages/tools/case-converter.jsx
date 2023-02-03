@@ -32,7 +32,7 @@ export default function CaseConverter() {
             <ToolsName name="Case converter" url="tools/case-converter" />
             <div className="d-flex justify-content-between align-items-center">
               <div
-                class="btn-group mt-3 mb-1 rounded"
+                class="btn-group mt-3 mb-2 rounded"
                 role="group"
                 aria-label="Basic example"
               >
@@ -83,6 +83,62 @@ export default function CaseConverter() {
                 </Toast>
               </div>
             </div>
+            <div className="d-flex justify-content-evenly align-items-center">
+              <div
+                class="btn-group mb-1 rounded"
+                role="group"
+                aria-label="Basic example"
+              >
+                <button
+                  type="button"
+                  class="btn btn-sm btn-share btn-shrink rounded"
+                >
+                  <i class="fa-solid fa-sm fa-bold"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-share btn-shrink rounded mx-2"
+                >
+                  <i class="fa-solid fa-sm fa-underline"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-share btn-shrink rounded"
+                >
+                  <i class="fa-solid fa-sm fa-align-right"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-share btn-shrink rounded mx-2"
+                >
+                  <i class="fa-solid fa-sm fa-align-left"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-share btn-shrink rounded"
+                >
+                  <i class="fa-solid fa-sm fa-align-justify"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-share btn-shrink rounded mx-2"
+                >
+                  <i class="fa-solid fa-sm fa-align-center"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-share btn-shrink rounded"
+                >
+                  <i class="fa-solid fa-sm fa-strikethrough"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-share btn-shrink rounded ms-2"
+                >
+                  <i class="fa-solid fa-sm fa-italic"></i>
+                </button>
+              </div>
+            </div>
             <div className="form-floating text-dm">
               <textarea
                 className="form-control shadow-sm"
@@ -99,7 +155,6 @@ export default function CaseConverter() {
                 the text goes here..
               </label>
             </div>
-
             <div className="row g-0">
               <div className="col-lg-12 col-4 d-grid my-3">
                 <button
