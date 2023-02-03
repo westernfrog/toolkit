@@ -8,7 +8,7 @@ import { Toast } from "react-bootstrap";
 
 export default function LetterCounter() {
   const [show, setShow] = useState(false);
-  const [text, setText] = useState(" ");
+  const [text, setText] = useState("");
 
   const handleOnChange = (event) => {
     setText(event.target.value);
@@ -77,7 +77,7 @@ export default function LetterCounter() {
                 id="copy-to-clipboard"
                 className="form-control shadow-sm"
                 style={{
-                  height: "46vh",
+                  height: "300px",
                   borderRadius: "10px",
                   resize: "none",
                 }}

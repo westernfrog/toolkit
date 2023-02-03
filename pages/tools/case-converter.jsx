@@ -160,7 +160,7 @@ export default function CaseConverter() {
                 class="btn-sm ms-2"
               />
             </div>
-            <div className="row mt-2 mb-1 g-2 text-dm">
+            <div className="row my-1 g-2 text-dm">
               <div className="col-6 col-lg-3 d-grid my-1">
                 <Buttons
                   name="Uppercase"
@@ -194,7 +194,7 @@ export default function CaseConverter() {
                 />
               </div>
             </div>
-            <div className="form-floating text-dm">
+            <div className="form-floating text-dm mb-4">
               <textarea
                 className="form-control shadow-sm text-format"
                 id="copy-to-clipboard"

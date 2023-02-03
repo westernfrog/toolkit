@@ -33,11 +33,6 @@ export default function JSFormat() {
     setNewText("");
   };
 
-  const clipboard = () => {
-    let newData = $(".input").html();
-    let data = JSON.stringify(newData);
-  };
-
   return (
     <>
       <Header />
@@ -57,17 +52,10 @@ export default function JSFormat() {
               >
                 <Buttons name="Sample" func={handleSampleText} class="btn-sm" />
                 <Buttons
+                  name="Reset"
                   func={handleReset}
-                  icon="fa-trash-can text-danger"
+                  icon="fa-trash-can text-danger me-2"
                   class="mx-2 btn-sm"
-                />
-                <Buttons
-                  func={() => {
-                    clipboard();
-                    setShow(true);
-                  }}
-                  icon="fa-copy fw-light text-success"
-                  class="btn-sm"
                 />
               </div>
               <div
@@ -75,22 +63,22 @@ export default function JSFormat() {
                 role="group"
                 aria-label="Basic example"
               >
-                <Toast
-                  onClose={() => setShow(false)}
-                  show={show}
-                  delay={5000}
-                  autohide
-                >
-                  <Buttons
-                    name="Copied!"
-                    icon="fa-circle-check fa-sm me-2 text-light"
-                    class="btn-sm fs-7 btn-success disabled"
-                  />
-                </Toast>
+                <Buttons
+                  name="to copy just click on the code area!"
+                  icon="fa-copy me-2"
+                  class="btn-sm btn-success disabled my-1"
+                />
               </div>
             </div>
-            <div className="row text-center text-rubik my-1">
-              <div className="col-md-4">
+
+            <div className="row text-center text-rubik mt-1 mb-4">
+              <div className="col-md-4 d-grid">
+                <Buttons
+                  name="Format"
+                  func={handleOnClick}
+                  icon="fa-arrow-right fa-color me-2"
+                  class="btn-sm fs-7 shadow-sm my-1"
+                />
                 <div className="border-0" style={{ borderRadius: "10px" }}>
                   <textarea
                     className="form-control shadow-sm fs-7 input"
@@ -104,40 +92,27 @@ export default function JSFormat() {
                     onChange={handleOnChange}
                   ></textarea>
                 </div>
-
-                <div className="row">
-                  <div className="col-6 d-grid">
-                    <button
-                      type="button"
-                      className="btn btn-sm btn-share border text-dm me-2 my-3 rounded text-uppercase text-dark text-dm fw-bold fs-7 py-2 btn-shrink"
-                      style={{
-                        borderRadius: "10px",
-                        fontSize: "14px",
-                      }}
-                      onClick={handleOnClick}
-                    >
-                      Format
-                      <i className="fa-solid fa-arrow-right fa-color fa-lg ms-2"></i>
-                    </button>
-                  </div>
-                  <div className="col-6 d-grid">
-                    <button
-                      type="button"
-                      className="btn btn-sm btn-share border text-dm my-3 text-uppercase text-dark text-dm fw-bold fs-7 py-2 btn-shrink"
-                      style={{ borderRadius: "10px" }}
-                      onClick={handleReset}
-                    >
-                      <i className="fa-solid fa-recycle fa-color me-2 fa-lg"></i>
-                      Reset
-                    </button>
-                  </div>
-                </div>
               </div>
-              <div className="col-md-8 mt-3 mt-lg-0">
+              <div className="col-md-8 mt-3 mt-lg-0 d-grid">
+                <Toast
+                  onClose={() => setShow(false)}
+                  show={show}
+                  delay={5000}
+                  autohide
+                >
+                  <Buttons
+                    name="JSON Selected!"
+                    icon="fa-circle-check fa-sm me-2 text-light"
+                    class="btn-sm fs-7 btn-success disabled my-1 border"
+                  />
+                </Toast>
                 <div className="border-0" style={{ borderRadius: "10px" }}>
                   <div
-                    className="text-dm rounded shadow-sm text-start p-3 overflow-auto bg-dark output"
+                    className="text-dm rounded shadow-sm text-start p-3 overflow-auto bg-dark user-select-all"
                     style={{ height: "400px" }}
+                    onClick={() => {
+                      setShow(true);
+                    }}
                   >
                     <JSONPretty
                       id="json-pretty"
