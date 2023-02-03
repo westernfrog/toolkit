@@ -161,23 +161,7 @@ export default function CaseConverter() {
                 class="btn-sm ms-2"
               />
             </div>
-            <div className="form-floating text-dm">
-              <textarea
-                className="form-control shadow-sm text-format"
-                id="copy-to-clipboard"
-                style={{
-                  height: "40vh",
-                  borderRadius: "10px",
-                  resize: "none",
-                }}
-                value={text}
-                onChange={handleOnChange}
-              ></textarea>
-              <label htmlFor="floatingTextarea" className="text-muted">
-                the text goes here..
-              </label>
-            </div>
-            <div className="row my-2 text-dm">
+            <div className="row mt-2 mb-1 g-2 text-dm">
               <div className="col-6 col-lg-3 d-grid my-1">
                 <Buttons
                   name="Uppercase"
@@ -210,6 +194,22 @@ export default function CaseConverter() {
                   class="fs-7"
                 />
               </div>
+            </div>
+            <div className="form-floating text-dm">
+              <textarea
+                className="form-control shadow-sm text-format"
+                id="copy-to-clipboard"
+                style={{
+                  height: "40vh",
+                  borderRadius: "10px",
+                  resize: "none",
+                }}
+                value={text}
+                onChange={handleOnChange}
+              ></textarea>
+              <label htmlFor="floatingTextarea" className="text-muted">
+                the text goes here..
+              </label>
             </div>
           </main>
         </div>
