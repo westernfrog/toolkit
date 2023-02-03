@@ -83,61 +83,60 @@ export default function CaseConverter() {
                 </Toast>
               </div>
             </div>
-            <div className="d-flex justify-content-between align-items-center">
-              <div
-                class="btn-group mb-1 rounded"
-                role="group"
-                aria-label="Basic example"
+
+            <div
+              class="btn-group mb-1 rounded d-flex justify-content-between align-items-center"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button
+                type="button"
+                class="btn btn-sm btn-share btn-shrink rounded"
               >
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink rounded"
-                >
-                  <i class="fa-solid fa-sm fa-bold"></i>
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink rounded mx-2"
-                >
-                  <i class="fa-solid fa-sm fa-underline"></i>
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink rounded"
-                >
-                  <i class="fa-solid fa-sm fa-align-right"></i>
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink rounded mx-2"
-                >
-                  <i class="fa-solid fa-sm fa-align-left"></i>
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink rounded"
-                >
-                  <i class="fa-solid fa-sm fa-align-justify"></i>
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink rounded mx-2"
-                >
-                  <i class="fa-solid fa-sm fa-align-center"></i>
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink rounded"
-                >
-                  <i class="fa-solid fa-sm fa-strikethrough"></i>
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-share btn-shrink rounded ms-2"
-                >
-                  <i class="fa-solid fa-sm fa-italic"></i>
-                </button>
-              </div>
+                <i class="fa-solid fa-sm fa-bold"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-share btn-shrink rounded mx-2"
+              >
+                <i class="fa-solid fa-sm fa-italic"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-share btn-shrink rounded"
+              >
+                <i class="fa-solid fa-sm fa-strikethrough"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-share btn-shrink rounded mx-2"
+              >
+                <i class="fa-solid fa-sm fa-underline"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-share btn-shrink rounded"
+              >
+                <i class="fa-solid fa-sm fa-align-right"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-share btn-shrink rounded mx-2"
+              >
+                <i class="fa-solid fa-sm fa-align-left"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-share btn-shrink rounded"
+              >
+                <i class="fa-solid fa-sm fa-align-justify"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-share btn-shrink rounded ms-2"
+              >
+                <i class="fa-solid fa-sm fa-align-center"></i>
+              </button>
             </div>
             <div className="form-floating text-dm">
               <textarea
