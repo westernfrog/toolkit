@@ -64,6 +64,10 @@ export default function CaseConverter() {
     $(".text-format").removeClass("text-uppercase text-lowercase");
     $(".text-format").toggleClass("text-capitalize");
   };
+  const handleTitle = () => {
+    $(".text-format").removeClass("text-uppercase text-lowercase");
+    $(".text-format").toggleClass("text-capitalize");
+  };
 
   return (
     <>
@@ -75,8 +79,8 @@ export default function CaseConverter() {
             <ToolsName name="Case converter" url="tools/case-converter" />
             <p className="text-dm col-lg-10 fs-7">
               A free online tool for converting text to different cases. If you
-              have a wrongly formatted text you want to convert it to a
-              <mark> specific case or format a piece of text</mark>, online case
+              have a wrongly formatted text you want to convert it to a{" "}
+              <mark>specific case or format a piece of text</mark>, online case
               converter will assist you to perform it immediately.
             </p>
             <div className="d-flex justify-content-between align-items-center">
@@ -201,7 +205,7 @@ export default function CaseConverter() {
               <div className="col-6 col-lg-3 d-grid my-1">
                 <Buttons
                   name="Title case"
-                  func={handleSentence}
+                  func={handleTitle}
                   icon="fa-t me-2 fa-color"
                   class="fs-7"
                 />
