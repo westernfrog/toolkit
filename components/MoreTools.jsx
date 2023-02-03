@@ -59,12 +59,6 @@ export default function MoreTools(props) {
                   active={props.caseconverter}
                 />
                 <ToolsCatMd
-                  icon={<i className="fa-solid fa-text-height fa-lg me-2"></i>}
-                  title="Text formatting"
-                  url="/tools/text-format"
-                  active={props.textformat}
-                />
-                <ToolsCatMd
                   icon={<i className="fa-solid fa-pencil fa-lg me-2"></i>}
                   title="Lorem Ipsum generator"
                   url="/tools/lorem-ipsum-generator"

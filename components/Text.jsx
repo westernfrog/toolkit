@@ -10,12 +10,6 @@ export default function TextCard() {
         desc="Convert your text or string to uppercase, lowercase, title-case or sentence-case."
       />
       <Card
-        url="/tools/text-format"
-        icon={<i className="fa-solid fa-text-height fa-2xl"></i>}
-        title="Text formatting"
-        desc="Convert your text into handwriting with desired paper type and ink color and download as PDF."
-      />
-      <Card
         url="/tools/lorem-ipsum-generator"
         icon={<i className="fa-solid fa-pencil fa-2xl"></i>}
         title="Lorem Ipsum generator"

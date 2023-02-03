@@ -62,7 +62,7 @@ export default function LetterCounter() {
                 </div>
               </div>
             </div>
-            <section className="my-5">
+            <section className="mt-5">
               <h5 className="text-rubik">More about Letter counter</h5>
               <ol className="fs-7 text-dm list-group list-group-numbered list-group-flush">
                 <li className="list-group-item bg-light border-0">
