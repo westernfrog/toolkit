@@ -50,28 +50,20 @@ export default function JSFormat() {
                 role="group"
                 aria-label="Basic example"
               >
-                <Buttons name="Sample" func={handleSampleText} class="btn-sm" />
                 <Buttons
-                  name="Reset"
+                  name="Sample"
+                  func={handleSampleText}
+                  class="btn-sm my-1"
+                />
+                <Buttons
                   func={handleReset}
-                  icon="fa-trash-can text-danger me-2"
-                  class="mx-2 btn-sm"
+                  icon="fa-trash-can text-danger"
+                  class="btn-sm mx-2 my-1"
                 />
-              </div>
-              <div
-                className="btn-group rounded ms-auto"
-                role="group"
-                aria-label="Basic example"
-              >
-                <Buttons
-                  name="to copy just click on the code area!"
-                  icon="fa-copy me-2"
-                  class="btn-sm btn-success disabled my-1"
-                />
+                <Buttons icon="fa-copy text-success" class="btn-sm my-1" />
               </div>
             </div>
-
-            <div className="row text-center text-rubik mt-1 mb-4">
+            <div className="row">
               <div className="col-md-4 d-grid">
                 <Buttons
                   name="Format"
@@ -79,6 +71,24 @@ export default function JSFormat() {
                   icon="fa-arrow-right fa-color me-2"
                   class="btn-sm fs-7 shadow-sm my-1"
                 />
+              </div>
+              <div className="col-md-8 d-grid">
+                <Toast
+                  onClose={() => setShow(false)}
+                  show={show}
+                  delay={5000}
+                  autohide
+                >
+                  <Buttons
+                    name="JSON Selected!"
+                    icon="fa-circle-check fa-sm me-2 text-light"
+                    class="btn-sm fs-7 btn-success disabled my-1 border d-none d-md-block"
+                  />
+                </Toast>
+              </div>
+            </div>
+            <div className="row text-center text-rubik mt-1 mb-4">
+              <div className="col-md-4 d-grid">
                 <div className="border-0" style={{ borderRadius: "10px" }}>
                   <textarea
                     className="form-control shadow-sm fs-7 input"
@@ -103,7 +113,7 @@ export default function JSFormat() {
                   <Buttons
                     name="JSON Selected!"
                     icon="fa-circle-check fa-sm me-2 text-light"
-                    class="btn-sm fs-7 btn-success disabled my-1 border"
+                    class="btn-sm fs-7 btn-success disabled my-1 border d-lg-none"
                   />
                 </Toast>
                 <div className="border-0" style={{ borderRadius: "10px" }}>
