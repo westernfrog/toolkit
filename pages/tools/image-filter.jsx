@@ -176,7 +176,10 @@ export default function ImageFilters() {
             <div className="container">
               <div {...getRootProps({ className: "dropzone" })}>
                 <input {...getInputProps()} />
-                <p>Drag 'n' drop some files here, or click to select files</p>
+                <p>
+                  Drag &apos;n&apos; drop some files here, or click to select
+                  files
+                </p>
               </div>
               <aside style={thumbsContainer}>{thumbs}</aside>
               <div className="sidebari">
