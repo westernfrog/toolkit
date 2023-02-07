@@ -1,3 +1,4 @@
+import Accept from "@/components/Drop";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import ToolsName from "@/components/ToolsName";
@@ -16,7 +17,7 @@ export default function ImageToBase() {
               url="tools/image-to-base"
             />
             <div className="row">
-              <div className="col-md-8 d-grid">
+              <div className="col-md-6 d-grid">
                 <Image
                   src="https://cdn-icons-png.flaticon.com/512/8881/8881731.png"
                   class="img-fluid border"
@@ -25,7 +26,9 @@ export default function ImageToBase() {
                   height={200}
                 ></Image>
               </div>
-              <div className="col-md-4"></div>
+              <div className="col-md-6">
+                <Accept />
+              </div>
             </div>
           </main>
         </div>
