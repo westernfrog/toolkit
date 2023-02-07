@@ -1,4 +1,3 @@
-import Accept from "@/components/Drop";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import ToolsName from "@/components/ToolsName";
@@ -25,9 +24,6 @@ export default function ImageToBase() {
                   width={200}
                   height={200}
                 ></Image>
-              </div>
-              <div className="col-md-6">
-                <Accept />
               </div>
             </div>
           </main>
