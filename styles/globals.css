@@ -167,5 +167,5 @@ body {
   display: none;
 }
 .MuiSlider-colorPrimary {
-  color: #6b4a9a;
+  color: #6b4a9a !important;
 }
