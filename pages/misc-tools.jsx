@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Name from "@/components/Tool-Name";
+import ToolName from "@/components/Tool-Name";
 import Sidebar from "@/components/Sidebar";
 import MiscCard from "@/components/Misc-Card";
 

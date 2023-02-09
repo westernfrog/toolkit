@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ImageCard from "@/components/Image-Card";
-import Name from "@/components/Tool-Name";
+import ToolName from "@/components/Tool-Name";
 import Sidebar from "@/components/Sidebar";
 
 export default function Image() {

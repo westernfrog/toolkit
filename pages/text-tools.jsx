@@ -1,4 +1,3 @@
-import Card from "@/components/Tool-Card";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ToolName from "@/components/Tool-Name";
