@@ -7,6 +7,7 @@ import CustomFilter from "@/components/CustomFilter";
 import ImageField from "@/components/ImageField";
 
 export const FilterContext = createContext();
+
 export default function ImageFilter() {
   const [tabFilter, setTabFilter] = useState("instaFilter");
   const [filterClass, setFilterClass] = useState("");
@@ -36,7 +37,7 @@ export default function ImageFilter() {
             <ToolsName name="Image filters" url="tools/image-filter" />
             <FilterContext.Provider value={value}>
               <div className="my-3">
-                <Grid container spacing={10}>
+                <Grid container>
                   <ImageField />
                   <Grid item xs={12} md={5}>
                     <CustomFilter />

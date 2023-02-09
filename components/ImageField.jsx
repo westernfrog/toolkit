@@ -6,11 +6,11 @@ import domtoimage from "dom-to-image";
 import { saveAs } from "file-saver";
 
 const StyleBox = styled(Box)({
-  background: "#ddd",
+  background: "#eee",
   minHeight: "20rem",
   maxHeight: "100vh",
   marginBottom: "1rem",
-  borderRadius: "5px",
+  borderRadius: "10px",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -58,7 +58,7 @@ export default function ImageField() {
   );
   return (
     <>
-      <Grid item xs={12} md={7} className="text-rubik">
+      <div className="container-fluid col-lg-6 mx-0 px-0 text-dm fw-bold text-muted d-grid">
         <StyleBox
           onClick={() =>
             uploadInputRef.current && uploadInputRef.current.click()
@@ -73,16 +73,17 @@ export default function ImageField() {
           accept="image/*"
           hidden
         />
-        <Button
-          className="fw-bold"
+        <button
+          className="btn btn-shrink btn-share text-dm"
           onClick={handleDownloadImage}
           disabled={!imageFile}
           variant="contained"
           fullWidth
         >
+          <i class="fa-solid fa-download me-2 fa-color"></i>
           Download Image
-        </Button>
-      </Grid>
+        </button>
+      </div>
     </>
   );
 }

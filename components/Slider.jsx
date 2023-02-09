@@ -8,6 +8,7 @@ export default function Slider({ min, max, value, handleChange }) {
         max={max}
         value={value}
         onChange={handleChange}
+        style={{ color: "#6b4a9a" }}
       />
     </div>
   );
