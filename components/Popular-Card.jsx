@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function PopCard(props) {
+export default function PopularCard(props) {
   return (
     <>
       <div className="col-md-6 border-0 a-link">

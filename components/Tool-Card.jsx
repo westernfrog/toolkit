@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Card(props) {
+export default function ToolCard(props) {
   return (
     <>
       <div className="col-md-4">

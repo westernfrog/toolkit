@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import ToolsName from "@/components/ToolsName";
+import Share from "@/components/Share";
 import Toast from "react-bootstrap/Toast";
 import { useState } from "react";
 import $ from "jquery";
@@ -75,7 +75,7 @@ export default function CaseConverter() {
         <div className="row mx-0 px-md-5">
           <Sidebar caseconverter="active-category" />
           <main className="col-md-11 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4 text-dm">
-            <ToolsName name="Case converter" url="tools/case-converter" />
+            <Share name="Case converter" url="text-tools/case-converter" />
             <p className="text-dm col-lg-10 fs-7">
               A free online tool for converting text to different cases. If you
               have a wrongly formatted text you want to convert it to a{" "}

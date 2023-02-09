@@ -1,6 +1,6 @@
 import { Box, Slider } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
-import { FilterContext } from "@/pages/tools/image-filter";
+import { FilterContext } from "@/pages/image-tools/image-filter";
 
 export default function SliderField({ slide }) {
   const { label, defaultValue, field } = slide;

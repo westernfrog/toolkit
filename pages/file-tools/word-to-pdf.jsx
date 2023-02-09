@@ -1,19 +1,16 @@
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import ToolsName from "@/components/ToolsName";
+import Share from "@/components/Share";
 
-export default function BaseToImage() {
+export default function WordToPDF() {
   return (
     <>
       <Header />
       <div className="container-fluid">
         <div className="row mx-0 px-md-5">
-          <Sidebar basetoimage="active-category" />
+          <Sidebar wordtopdf="active-category" />
           <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4">
-            <ToolsName
-              name="Base64 to Image converter"
-              url="tools/base-to-image"
-            />
+            <Share name="Word to PDF converter" url="file-tools/word-to-pdf" />
           </main>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import Link from "next/link";
-import ToolsCatMd from "./ToolsCatMd";
+import ToolsCatMd from "./Tools-CatMd";
 
 export default function MoreTools(props) {
   return (
     <>
       <button
-        className="btn btn-sm btn-share btn-shrink text-dm p-2 d-lg-none ms-2"
+        className="btn btn-sm btn-white btn-shrink text-dm p-2 d-lg-none ms-2"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasExample"
@@ -40,7 +40,10 @@ export default function MoreTools(props) {
           <nav className="d-md-block bg-light px-2">
             <div className="my-2">
               <h4 className="sidebar-heading text-dm fw-bold">
-                <Link href={"/text"} className="text-decoration-none text-dark">
+                <Link
+                  href={"/text-tools"}
+                  className="text-decoration-none text-dark"
+                >
                   <div className="row g-0">
                     <div className="col-10 text-chivo fw-bold mb-0">
                       Text tools
@@ -55,31 +58,31 @@ export default function MoreTools(props) {
                 <ToolsCatMd
                   icon={<i className="fa-solid fa-font fa-lg me-2"></i>}
                   title="Case converter"
-                  url="/tools/case-converter"
+                  url="/text-tools/case-converter"
                   active={props.caseconverter}
                 />
                 <ToolsCatMd
                   icon={<i className="fa-solid fa-pencil fa-lg me-2"></i>}
                   title="Lorem Ipsum generator"
-                  url="/tools/lorem-ipsum-generator"
+                  url="/text-tools/lorem-ipsum-generator"
                   active={props.loremipsum}
                 />
                 <ToolsCatMd
                   icon={<i className="fa-solid fa-calculator fa-lg me-2"></i>}
                   title="Letter counter"
-                  url="/tools/letter-counter"
+                  url="/text-tools/letter-counter"
                   active={props.lettercounter}
                 />
                 <ToolsCatMd
                   icon={<i className="fa-solid fa-laptop-code fa-lg me-2"></i>}
                   title="Prettify Javascript"
-                  url="/tools/javascript-formatter"
+                  url="/misc-tools/javascript-formatter"
                   active={props.javascriptformatter}
                 />
               </ul>
               <h4 className="sidebar-heading mt-3 text-dm fw-bold">
                 <Link
-                  href={"/image"}
+                  href={"/image-tools"}
                   className="text-decoration-none text-dark"
                 >
                   <div className="row g-0">
@@ -96,24 +99,27 @@ export default function MoreTools(props) {
                 <ToolsCatMd
                   icon={<i className="fa-solid fa-photo-film fa-lg me-2"></i>}
                   title="Image filters"
-                  url="/tools/image-filter"
+                  url="/image-tools/image-filter"
                   active={props.imagefilter}
                 />
                 <ToolsCatMd
                   icon={<i className="fa-solid fa-image fa-lg me-2"></i>}
                   title="Image to Base64 converter"
-                  url="/tools/image-to-base"
+                  url="/image-tools/image-to-base"
                   active={props.imagetobase}
                 />
                 <ToolsCatMd
                   icon={<i className="fa-solid fa-code fa-lg me-2"></i>}
                   title="Base64 to Image converter"
-                  url="/tools/base-to-image"
+                  url="/image-tools/base-to-image"
                   active={props.basetoimage}
                 />
               </ul>
               <h4 className="sidebar-heading mt-3 text-dm fw-bold">
-                <Link href={"/file"} className="text-decoration-none text-dark">
+                <Link
+                  href={"/file-tools"}
+                  className="text-decoration-none text-dark"
+                >
                   <div className="row g-0">
                     <div className="col-10 text-chivo fw-bold mb-0">
                       File tools
@@ -128,13 +134,13 @@ export default function MoreTools(props) {
                 <ToolsCatMd
                   icon={<i className="fa-regular fa-file-pdf fa-xl me-2"></i>}
                   title="PDF to Word converter"
-                  url="/tools/pdf-to-word"
+                  url="/file-tools/pdf-to-word"
                   active={props.pdftoword}
                 />
                 <ToolsCatMd
                   icon={<i className="fa-regular fa-file-word fa-xl me-2"></i>}
                   title="Word to PDF converter"
-                  url="/tools/word-to-pdf"
+                  url="/file-tools/word-to-pdf"
                   active={props.wordtopdf}
                 />
               </ul>

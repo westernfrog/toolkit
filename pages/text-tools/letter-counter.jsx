@@ -2,7 +2,7 @@ import Buttons from "@/components/Buttons";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import ToolsName from "@/components/ToolsName";
+import Share from "@/components/Share";
 import { useState } from "react";
 import { Toast } from "react-bootstrap";
 
@@ -31,7 +31,7 @@ export default function LetterCounter() {
         <div className="row mx-0 px-md-5">
           <Sidebar lettercounter="active-category" />
           <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4 text-dm">
-            <ToolsName name="Letter counter" url="tools/letter-counter" />
+            <Share name="Letter counter" url="text-tools/letter-counter" />
             <div className="d-flex justify-content-between align-items-center mt-3">
               <div
                 className="btn-group rounded"

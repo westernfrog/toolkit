@@ -1,5 +1,5 @@
-import Categories from "./Categories";
-import PopCard from "./PopCard";
+import Categories from "./Tool-Categories";
+import PopularCard from "./Popular-Card";
 
 export default function Overview() {
   return (
@@ -17,14 +17,14 @@ export default function Overview() {
               decrease the complexity of the operation.
             </p>
             <div className="row my-5 pb-5 border-bottom">
-              <PopCard
-                url="/text"
+              <PopularCard
+                url="/text-tools"
                 title="Text formatters"
                 desc="Case converters, Lorem ipsum generator and many more.."
                 style="linear-gradient(300deg, #EBC7E6 0%, #645CBB 70%)"
               />
-              <PopCard
-                url="/image"
+              <PopularCard
+                url="/image-tools"
                 title="Image tools"
                 desc="Image filters, Image to Base64 convertor and more.."
                 style="linear-gradient(0deg, #FD8A8A 0%, #FF74B1 90%)"

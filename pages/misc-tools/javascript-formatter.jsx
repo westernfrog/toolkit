@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import ToolsName from "@/components/ToolsName";
+import Share from "@/components/Share";
 import { useState } from "react";
 import Toast from "react-bootstrap/Toast";
 import JSONPretty from "react-json-pretty";
@@ -40,9 +40,9 @@ export default function JSFormat() {
         <div className="row mx-0 px-md-5">
           <Sidebar javascriptformatter="active-category" />
           <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4 text-dm">
-            <ToolsName
+            <Share
               name="Javascript formatter"
-              url="tools/javascript-formatter"
+              url="misc-tools/javascript-formatter"
             />
             <div className="d-flex justify-content-between align-items-center mt-3">
               <div

@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 import { useContext, useRef, useState } from "react";
-import { FilterContext } from "@/pages/tools/image-filter";
+import { FilterContext } from "@/pages/image-tools/image-filter";
 import domtoimage from "dom-to-image";
 import { saveAs } from "file-saver";
 
@@ -74,7 +74,7 @@ export default function ImageField() {
           hidden
         />
         <button
-          className="btn btn-shrink btn-share text-dm fw-bold"
+          className="btn btn-shrink btn-white text-dm fw-bold"
           onClick={handleDownloadImage}
           disabled={!imageFile}
           variant="contained"

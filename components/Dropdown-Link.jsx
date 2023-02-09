@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Dropdown(props) {
+export default function DropdownLink(props) {
   return (
     <>
       <li>

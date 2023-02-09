@@ -1,10 +1,11 @@
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import ToolsName from "@/components/ToolsName";
+import Share from "@/components/Share";
 import { Grid } from "@mui/material";
 import { createContext, useState } from "react";
 import CustomFilter from "@/components/CustomFilter";
 import ImageField from "@/components/ImageField";
+import Footer from "@/components/Footer";
 
 export const FilterContext = createContext();
 
@@ -34,9 +35,15 @@ export default function ImageFilter() {
         <div className="row mx-0 px-md-5">
           <Sidebar imagefilter="active-category" />
           <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4">
-            <ToolsName name="Image filters" url="tools/image-filter" />
+            <Share name="Image filters" url="image-tools/image-filter" />
+            <p className="text-dm col-lg-10 fs-7">
+              A free online tool <mark>for applying filters on images. </mark>
+              There are different types of filters you can apply to image. They
+              can be color manipulation such as brighten, lighten, darken,
+              saturate/desaturate, greyscale, contrast, sepia.
+            </p>
             <FilterContext.Provider value={value}>
-              <div className="my-3">
+              <div className="my-4">
                 <Grid container>
                   <ImageField />
                   <Grid item xs={12} md={6}>
@@ -48,6 +55,7 @@ export default function ImageFilter() {
           </main>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

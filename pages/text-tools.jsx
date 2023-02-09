@@ -1,10 +1,11 @@
-import File0 from "@/components/File";
+import Card from "@/components/Tool-Card";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Name from "@/components/Name";
+import ToolName from "@/components/Tool-Name";
 import Sidebar from "@/components/Sidebar";
+import TextCard from "@/components/Text-Card";
 
-export default function File() {
+export default function Text() {
   return (
     <>
       <Header />
@@ -12,10 +13,10 @@ export default function File() {
         <div className="row mx-0 px-md-5">
           <Sidebar />
           <main className="col-md-9 ms-sm-auto col-lg-9 col-xl-10 px-md-5 my-4 py-1">
-            <div className="col-lg-10">
-              <Name id="file" name="File tools" />
+            <div className="col-lg-11">
+              <ToolName id="text" name="Text tools" />
               <div className="row my-4">
-                <File0 />
+                <TextCard />
               </div>
             </div>
           </main>

@@ -3,7 +3,7 @@ export default function Buttons(props) {
     <>
       <button
         type="button"
-        className={"btn btn-share btn-shrink rounded " + props.class}
+        className={"btn btn-white btn-shrink rounded " + props.class}
         onClick={props.func}
       >
         <i className={"fa-solid fa-sm " + props.icon}></i>

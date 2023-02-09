@@ -10,8 +10,10 @@ export default function CustomFilter() {
   ];
 
   return (
-    <div className="container-fluid my-5 my-lg-0 ms-4">
-      <h1 className="fs-4 text-rubik">Apply Filters</h1>
+    <div className="container-fluid my-5 my-lg-0 ms-0 ms-lg-4 px-0 px-lg-4">
+      <h1 className="fs-5 text-rubik">
+        <i class="fa-solid fa-filter fa-color me-2"></i>Apply Filters
+      </h1>
       <div className="my-3 text-dm">
         {slider.map((slide) => (
           <SliderField slide={slide} key={slide.field} />

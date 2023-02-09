@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Tools from "./Tools";
 
 export default function Categories() {
@@ -10,7 +9,7 @@ export default function Categories() {
           icon={<i className="fa-solid fa-font fa-xl mx-auto text-light"></i>}
           title="Text tools"
           desc="Generate and edit text"
-          url="/text"
+          url="/text-tools"
           color={{ backgroundColor: "#19c37d" }}
         />
         <Tools
@@ -19,7 +18,7 @@ export default function Categories() {
           }
           title="Image tools"
           desc="Generate and edit images"
-          url="/image"
+          url="/image-tools"
           color={{ backgroundColor: "#dd5ce5" }}
         />
         <Tools
@@ -28,7 +27,7 @@ export default function Categories() {
           }
           title="File tools"
           desc="Convert files as your wish"
-          url="/file"
+          url="/file-tools"
           color={{ backgroundColor: "#5436da" }}
         />
         <Tools
@@ -37,7 +36,7 @@ export default function Categories() {
           }
           title="Miscellaneous tools"
           desc="Other tools"
-          url="/tools/misc"
+          url="/misc-tools"
           color={{ backgroundColor: "#ef4146" }}
         />
         <Tools
@@ -46,7 +45,7 @@ export default function Categories() {
           }
           title="JSON formatter"
           desc="Prettify json code"
-          url="/tools/javascript-formatter"
+          url="/misc-tools/javascript-formatter"
           color={{ backgroundColor: "#f4ac36" }}
         />
       </div>

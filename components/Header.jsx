@@ -1,7 +1,7 @@
 import Link from "next/link";
 import $ from "jquery";
 import { useEffect } from "react";
-import Dropdown from "./Dropdown";
+import DropdownLink from "./Dropdown-Link";
 import Message from "./Message";
 
 export default function Header() {
@@ -54,25 +54,25 @@ export default function Header() {
                   className="dropdown-menu text-dm border-0 shadow-sm rounded"
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
-                  <Dropdown
+                  <DropdownLink
                     icon={<i className="fa-solid fa-font me-2"></i>}
                     title="Text tools"
-                    url="/text"
+                    url="/text-tools"
                   />
-                  <Dropdown
+                  <DropdownLink
                     icon={<i className="fa-regular fa-image me-2"></i>}
                     title="Image tools"
-                    url="/image"
+                    url="/image-tools"
                   />
-                  <Dropdown
+                  <DropdownLink
                     icon={<i className="fa-regular fa-file-pdf me-2"></i>}
                     title="File tools"
-                    url="/file"
+                    url="/file-tools"
                   />
-                  <Dropdown
+                  <DropdownLink
                     icon={<i className="fa-regular fa-file-code me-2"></i>}
                     title="Miscellaneous tools"
-                    url="/tools/misc"
+                    url="/misc-tools"
                   />
                 </ul>
               </li>
@@ -99,17 +99,17 @@ export default function Header() {
                   className="dropdown-menu text-dm border-0 shadow-sm rounded"
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
-                  <Dropdown
+                  <DropdownLink
                     icon={<i className="fa-regular fa-envelope me-2"></i>}
                     title="E-mail"
                     url="mailto:haaamansingh007@gmail.com"
                   />
-                  <Dropdown
+                  <DropdownLink
                     icon={<i className="fa-brands fa-linkedin-in me-2"></i>}
                     title="Linkedin"
                     url="https://linkedin.com/in/Linkman-singh123/"
                   />
-                  <Dropdown
+                  <DropdownLink
                     icon={<i className="fa-brands fa-instagram me-2"></i>}
                     title="Instagram"
                     url="https://instagram.com/iam__amansingh/"

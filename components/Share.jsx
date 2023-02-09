@@ -1,8 +1,8 @@
-import MoreTools from "./MoreTools";
+import MoreTools from "./More-Tools";
 import React, { useState } from "react";
 import Toast from "react-bootstrap/Toast";
 
-export default function ToolsName(props) {
+export default function Share(props) {
   function clipboard() {
     let text = document.getElementById("clipboard");
     text.select();
@@ -17,7 +17,7 @@ export default function ToolsName(props) {
         <div className="btn-toolbar my-2 mb-md-0">
           <button
             type="button"
-            className="btn btn-sm btn-share btn-shrink text-dm p-2"
+            className="btn btn-sm btn-white btn-shrink text-dm p-2"
             data-bs-toggle="modal"
             data-bs-target="#Modal"
           >
@@ -83,7 +83,7 @@ export default function ToolsName(props) {
                   >
                     <button
                       type="button"
-                      className="btn btn-share btn-sm btn-success"
+                      className="btn btn-white btn-sm btn-success"
                       disabled
                     >
                       <i className="fa-solid fa-circle-check fa-sm text-light me-2"></i>
@@ -92,7 +92,7 @@ export default function ToolsName(props) {
                   </Toast>
                   <button
                     type="button"
-                    className="btn btn-share btn-sm btn-shrink"
+                    className="btn btn-white btn-sm btn-shrink"
                     data-bs-dismiss="modal"
                   >
                     Close
