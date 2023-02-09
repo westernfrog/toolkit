@@ -6,7 +6,7 @@ import domtoimage from "dom-to-image";
 import { saveAs } from "file-saver";
 
 const StyleBox = styled(Box)({
-  background: "#eee",
+  background: "#ececf1",
   minHeight: "20rem",
   maxHeight: "100vh",
   marginBottom: "1rem",
