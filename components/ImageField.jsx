@@ -1,4 +1,4 @@
-import { Box, Button, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 import { useContext, useRef, useState } from "react";
 import { FilterContext } from "@/pages/tools/image-filter";
@@ -74,7 +74,7 @@ export default function ImageField() {
           hidden
         />
         <button
-          className="btn btn-shrink btn-share text-dm"
+          className="btn btn-shrink btn-share text-dm fw-bold"
           onClick={handleDownloadImage}
           disabled={!imageFile}
           variant="contained"

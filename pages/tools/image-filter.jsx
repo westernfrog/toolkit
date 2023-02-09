@@ -39,7 +39,7 @@ export default function ImageFilter() {
               <div className="my-3">
                 <Grid container>
                   <ImageField />
-                  <Grid item xs={12} md={5}>
+                  <Grid item xs={12} md={6}>
                     <CustomFilter />
                   </Grid>
                 </Grid>

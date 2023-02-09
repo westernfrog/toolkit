@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import SliderField from "./SliderField";
 
 export default function CustomFilter() {
@@ -11,10 +10,13 @@ export default function CustomFilter() {
   ];
 
   return (
-    <Box sx={{ marginTop: "2rem" }} className="text-dm">
-      {slider.map((slide) => (
-        <SliderField slide={slide} key={slide.field} />
-      ))}
-    </Box>
+    <div className="container-fluid my-5 my-lg-0 ms-4">
+      <h1 className="fs-4 text-rubik">Apply Filters</h1>
+      <div className="my-3 text-dm">
+        {slider.map((slide) => (
+          <SliderField slide={slide} key={slide.field} />
+        ))}
+      </div>
+    </div>
   );
 }
