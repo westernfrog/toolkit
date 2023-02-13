@@ -4,10 +4,10 @@ import Share from "@/components/Share";
 import { useState } from "react";
 
 export default function LoremIpsum() {
-  const [wordCount, setWordCount] = useState(200);
+  const [wordCount, setWordCount] = useState(140);
 
   const loremIpsum =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit, nunc eu rutrum luctus, lorem erat consequat enim, quis tincidunt erat ante eget justo. Nullam semper varius nisi, sit amet ullamcorper nisl laoreet non. Donec vestibulum, justo at tincidunt dictum, ex nisi blandit nisl, vel laoreet erat magna et massa. Sed euismod euismod est id laoreet. Sed ac velit vel eros auctor pellentesque. Proin vel accumsan velit, eget tincidunt tellus. In hac habitasse platea dictumst. Nunc malesuada faucibus varius. Nulla facilisi. Vivamus sit amet blandit nibh, euismod laoreet nulla. Sed tristique euismod ante, non tincidunt libero consectetur et. Aliquam fringilla volutpat turpis eget volutpat. Sed iaculis sapien vel nisi placerat, at consectetur velit tincidunt. Integer at ante id elit viverra blandit. Sed ullamcorper, lacus quis luctus accumsan, sem odio suscipit magna, vel suscipit ligula sem vitae sapien."
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit, nunc eu rutrum luctus, lorem erat consequat enim, quis tincidunt erat ante eget justo. Nullam semper varius nisi, sit amet ullamcorper nisl laoreet non. Donec vestibulum, justo at tincidunt dictum, ex nisi blandit nisl, vel laoreet erat magna et massa. Sed euismod euismod est id laoreet. Sed ac velit vel eros auctor pellentesque. Proin vel accumsan velit, eget tincidunt tellus. In hac habitasse platea dictumst. Nunc malesuada faucibus varius. Nulla facilisi. Vivamus sit amet blandit nibh, euismod laoreet nulla. Sed tristique euismod ante, non tincidunt libero consectetur et. Aliquam fringilla volutpat turpis eget volutpat. Sed iaculis sapien vel nisi placerat, at consectetur velit tincidunt. Integer at ante id elit viverra blandit. Sed ullamcorper, lacus quis luctus accumsan, sem odio suscipit magna, vel suscipit ligula sem vitae sapien. Fusce suscipit, nunc."
       .split(" ")
       .slice(0, wordCount)
       .join(" ");
@@ -24,17 +24,17 @@ export default function LoremIpsum() {
             />
             <div className="text-rubik">
               <p>
-                <label htmlFor="word-count">
-                  Number of words:
-                  <input
-                    type="number"
-                    id="word-count"
-                    value={wordCount}
-                    onChange={(e) => setWordCount(e.target.value)}
-                  />
-                </label>
+                <label htmlFor="word-count">Number of words:</label>
+                <input
+                  type="number"
+                  id="word-count"
+                  value={wordCount}
+                  onChange={(e) => setWordCount(e.target.value)}
+                />
               </p>
-              <p className="text-dm">{loremIpsum}</p>
+              <p className="text-dm fs-7 border border-2 p-3 rounded">
+                {loremIpsum}
+              </p>
             </div>
           </main>
         </div>
